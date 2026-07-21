@@ -1,0 +1,8 @@
+{
+  "instructors": [
+    { "name": "Diyi Yang",    "role": "Instructor", "url": "https://cs.stanford.edu/~diyiy/",  "photo": "diyiy.jpg" },
+    { "name": "Michael Ryan", "role": "Instructor", "url": "https://michryan.com/",             "photo": "mryan.jpg" },
+    { "name": "John Yang",    "role": "Instructor", "url": "https://john-b-yang.github.io/",     "photo": "jyang.jpg" }
+  ],
+  "cas": []
+}

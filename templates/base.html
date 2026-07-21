@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}Stanford CS329Z | Engineering AI Agents{% endblock %}</title>
+  <meta name="description" content="{% block description %}Official course website for Stanford CS329Z: Engineering AI Agents — schedule, deadlines, coursework, project, and logistics.{% endblock %}">
+  <link rel="canonical" href="https://cs329z.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <meta property="og:site_name" content="Stanford CS329Z">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ url_for('index') }}">CS329Z Home</a>
+      <button type="button" class="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation"
+              onclick="var m=document.getElementById('nav-menu');var o=m.classList.toggle('in');this.setAttribute('aria-expanded',o)">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse" id="nav-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#deadlines">Deadlines</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#logistics">Logistics</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>

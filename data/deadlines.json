@@ -1,0 +1,11 @@
+[
+  { "week": 3,  "deadline": "HW1 Released",                      "date": "TBA", "time": "TBA" },
+  { "week": 3,  "deadline": "Project Proposal Due",              "date": "TBA", "time": "TBA" },
+  { "week": 5,  "deadline": "HW1 Due",                           "date": "TBA", "time": "TBA" },
+  { "week": 6,  "deadline": "HW2 Released",                      "date": "TBA", "time": "TBA" },
+  { "week": 6,  "deadline": "Midway Report Due & Midpoint Demo", "date": "TBA", "time": "TBA" },
+  { "week": 7,  "deadline": "HW3 Released",                      "date": "TBA", "time": "TBA" },
+  { "week": 8,  "deadline": "HW2 Due",                           "date": "TBA", "time": "TBA" },
+  { "week": 9,  "deadline": "HW3 Due",                           "date": "TBA", "time": "TBA" },
+  { "week": 10, "deadline": "Final Submission & Final System Demo", "date": "TBA", "time": "TBA" }
+]
