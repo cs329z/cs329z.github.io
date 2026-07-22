@@ -1,78 +1,71 @@
 [
   {
     "week": 1,
-    "theme": "Foundations & Landscape",
     "lectures": [
       {
-        "date": "TBA",
+        "date": "Wed Sep 23",
         "title": "Introduction — What Are Agentic Systems?",
+        "theme": "Foundations & Landscape",
         "description": "The spectrum from monolithic models to compound AI systems to agents; when compound systems win; the three engineering challenges (decomposition, data, evaluation); course logistics.",
         "readings": [
-          { "text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/" }
+          {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
         ],
         "additional": [
-          { "text": "Ng. \"Agentic Design Patterns Part 1: Four AI Agent Strategies…\" The Batch (2024).", "url": "https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/" },
-          { "text": "Si et al. \"Towards Execution-Grounded Automated AI Research.\" arXiv (2026).", "url": "https://arxiv.org/abs/2601.14525" }
-        ]
-      },
-      {
-        "date": "TBA",
-        "title": "LLMs for Builders",
-        "description": "APIs & SDKs (litellm), structured I/O and constrained generation, decoding strategies and test-time compute, context engineering, model selection, and cost/latency tradeoffs.",
-        "readings": [
-          { "text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents" }
-        ],
-        "additional": [
-          { "text": "Rajasekaran et al. \"Effective Context Engineering for AI Agents.\" Anthropic (2025).", "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" }
+          {"text": "Ng. \"Agentic Design Patterns Part 1: Four AI Agent Strategies…\" The Batch (2024).", "url": "https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/"},
+          {"text": "Si et al. \"Towards Execution-Grounded Automated AI Research.\" arXiv (2026).", "url": "https://arxiv.org/abs/2601.14525"}
         ]
       }
     ]
   },
   {
     "week": 2,
-    "theme": "Building Blocks",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Retrieval-Augmented Generation (RAG)",
-        "description": "Grounding and hallucination, embeddings and vector stores, chunking strategies, hybrid search, cross-encoders and late interaction (ColBERT). Hands-on: build a RAG pipeline from scratch.",
+        "date": "Mon Sep 28",
+        "title": "LLMs for Builders",
+        "theme": "Foundations & Landscape",
+        "description": "APIs & SDKs (litellm), structured I/O and constrained generation, decoding strategies and test-time compute, context engineering, model selection, and cost/latency tradeoffs.",
         "readings": [
-          { "text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401" }
+          {"text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"}
         ],
         "additional": [
-          { "text": "Khattab & Zaharia. \"ColBERT: Efficient and Effective Passage Search via Late Interaction over BERT.\" SIGIR (2020).", "url": "https://arxiv.org/abs/2004.12832" }
+          {"text": "Rajasekaran et al. \"Effective Context Engineering for AI Agents.\" Anthropic (2025).", "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"}
         ]
       },
       {
-        "date": "TBA",
-        "title": "Tool Use & Function Calling",
-        "description": "The REPL, function-calling APIs, the Model Context Protocol (MCP), designing good tools, code-execution sandboxes, error handling and retries. Hands-on: build a tool-using system from scratch.",
+        "date": "Wed Sep 30",
+        "title": "Retrieval-Augmented Generation (RAG)",
+        "theme": "Building Blocks",
+        "description": "Grounding and hallucination, embeddings and vector stores, chunking strategies, hybrid search, cross-encoders and late interaction (ColBERT). Hands-on: build a RAG pipeline from scratch.",
         "readings": [
-          { "text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18" }
+          {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
         ],
-        "additional": []
+        "additional": [
+          {"text": "Khattab & Zaharia. \"ColBERT: Efficient and Effective Passage Search via Late Interaction over BERT.\" SIGIR (2020).", "url": "https://arxiv.org/abs/2004.12832"}
+        ]
       }
     ]
   },
   {
     "week": 3,
-    "theme": "Frameworks & Agent Design",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Frameworks & Orchestration",
-        "description": "DSPy (signatures, modules, optimizers), LangChain/LangGraph, LlamaIndex; what frameworks abstract vs. what you built from scratch; choosing the right level of abstraction.",
+        "date": "Mon Oct 5",
+        "title": "Tool Use & Function Calling",
+        "theme": "Building Blocks",
+        "description": "The REPL, function-calling APIs, the Model Context Protocol (MCP), designing good tools, code-execution sandboxes, error handling and retries. Hands-on: build a tool-using system from scratch.",
         "readings": [
-          { "text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714" }
+          {"text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
         ],
         "additional": []
       },
       {
-        "date": "TBA",
-        "title": "Agent Design Patterns & Scaffolds",
-        "description": "The workflows-vs-agents taxonomy, five composable workflow patterns, agent patterns (ReAct, plan-and-execute, reflection), and scaffolds as design decisions.",
+        "date": "Wed Oct 7",
+        "title": "Frameworks & Orchestration",
+        "theme": "Frameworks & Agent Design",
+        "description": "DSPy (signatures, modules, optimizers), LangChain/LangGraph, LlamaIndex; what frameworks abstract vs. what you built from scratch; choosing the right level of abstraction.",
         "readings": [
-          { "text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629" }
+          {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"}
         ],
         "additional": []
       }
@@ -80,199 +73,238 @@
   },
   {
     "week": 4,
-    "theme": "Memory & Multi-Agent Systems",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Agent Memory Architectures",
-        "description": "Short- vs. long-term memory, memory as tool-based actions, the file system as externalized memory, structured memory paradigms, and cross-agent memory.",
+        "date": "Mon Oct 12",
+        "title": "Agent Design Patterns & Scaffolds",
+        "theme": "Frameworks & Agent Design",
+        "description": "The workflows-vs-agents taxonomy, five composable workflow patterns, agent patterns (ReAct, plan-and-execute, reflection), and scaffolds as design decisions.",
         "readings": [
-          { "text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560" }
+          {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"}
         ],
-        "additional": [
-          { "text": "Letta. \"Agent Memory: How to Build Agents that Learn and Remember.\" Letta Blog (2025).", "url": "https://www.letta.com/blog/agent-memory" },
-          { "text": "Chhikara et al. \"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory.\" arXiv (2025).", "url": "https://arxiv.org/abs/2504.19413" },
-          { "text": "Park et al. \"Generative Agents: Interactive Simulacra of Human Behavior.\" UIST (2023).", "url": "https://arxiv.org/abs/2304.03442" }
-        ]
+        "additional": []
       },
       {
-        "date": "TBA",
-        "title": "Multi-Agent Systems",
-        "description": "Single vs. multi-agent architectures, orchestration patterns, handoffs and state transfer, delegation and collaboration patterns, and the challenges of coordination and error propagation.",
+        "date": "Wed Oct 14",
+        "title": "Agent Memory Architectures",
+        "theme": "Memory & Multi-Agent Systems",
+        "description": "Short- vs. long-term memory, memory as tool-based actions, the file system as externalized memory, structured memory paradigms, and cross-agent memory.",
         "readings": [
-          { "text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155" }
+          {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"}
         ],
         "additional": [
-          { "text": "Cemri et al. \"Why Do Multi-Agent LLM Systems Fail?\" arXiv (2025).", "url": "https://arxiv.org/abs/2503.13657" },
-          { "text": "Neubig. \"Don't Sleep on Single-agent Systems.\" OpenHands Blog (2024).", "url": "https://openhands.dev/blog/dont-sleep-on-single-agent-systems" },
-          { "text": "Liu et al. \"A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration.\" COLM (2024).", "url": "https://arxiv.org/abs/2310.02170" }
+          {"text": "Letta. \"Agent Memory: How to Build Agents that Learn and Remember.\" Letta Blog (2025).", "url": "https://www.letta.com/blog/agent-memory"},
+          {"text": "Chhikara et al. \"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory.\" arXiv (2025).", "url": "https://arxiv.org/abs/2504.19413"},
+          {"text": "Park et al. \"Generative Agents: Interactive Simulacra of Human Behavior.\" UIST (2023).", "url": "https://arxiv.org/abs/2304.03442"}
         ]
       }
     ]
   },
   {
     "week": 5,
-    "theme": "Optimization",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Optimization",
-        "description": "The landscape from prompts to fine-tuning; prompt optimization (GEPA, MIPROv2, OPRO, TextGrad); test-time compute scaling; LoRA/QLoRA; distillation; RLHF/DPO at a high level; and when to optimize prompts vs. weights vs. inference compute.",
+        "date": "Mon Oct 19",
+        "title": "Multi-Agent Systems",
+        "theme": "Memory & Multi-Agent Systems",
+        "description": "Single vs. multi-agent architectures, orchestration patterns, handoffs and state transfer, delegation and collaboration patterns, and the challenges of coordination and error propagation.",
         "readings": [
-          { "text": "Snell et al. \"Scaling LLM Test-Time Compute Optimally…\" ICLR (2025).", "url": "https://arxiv.org/abs/2408.03314" },
-          { "text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform RL.\" arXiv (2026).", "url": "https://arxiv.org/abs/2507.19457" }
+          {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"}
         ],
         "additional": [
-          { "text": "Soylu et al. \"Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together.\" EMNLP (2024).", "url": "https://aclanthology.org/2024.emnlp-main.597/" },
-          { "text": "Opsahl-Ong et al. \"Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs.\" arXiv (2024).", "url": "https://arxiv.org/abs/2406.11695" }
+          {"text": "Cemri et al. \"Why Do Multi-Agent LLM Systems Fail?\" arXiv (2025).", "url": "https://arxiv.org/abs/2503.13657"},
+          {"text": "Neubig. \"Don't Sleep on Single-agent Systems.\" OpenHands Blog (2024).", "url": "https://openhands.dev/blog/dont-sleep-on-single-agent-systems"},
+          {"text": "Liu et al. \"A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration.\" COLM (2024).", "url": "https://arxiv.org/abs/2310.02170"}
         ]
       },
       {
-        "date": "TBA",
-        "title": "📺 Guest Lecture (TBA)",
-        "description": "",
-        "readings": [],
-        "additional": []
+        "date": "Wed Oct 21",
+        "title": "Optimization",
+        "theme": "Optimization",
+        "description": "The landscape from prompts to fine-tuning; prompt optimization (GEPA, MIPROv2, OPRO, TextGrad); test-time compute scaling; LoRA/QLoRA; distillation; RLHF/DPO at a high level; and when to optimize prompts vs. weights vs. inference compute.",
+        "readings": [
+          {"text": "Snell et al. \"Scaling LLM Test-Time Compute Optimally…\" ICLR (2025).", "url": "https://arxiv.org/abs/2408.03314"},
+          {"text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform RL.\" arXiv (2026).", "url": "https://arxiv.org/abs/2507.19457"}
+        ],
+        "additional": [
+          {"text": "Soylu et al. \"Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together.\" EMNLP (2024).", "url": "https://aclanthology.org/2024.emnlp-main.597/"},
+          {"text": "Opsahl-Ong et al. \"Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs.\" arXiv (2024).", "url": "https://arxiv.org/abs/2406.11695"}
+        ]
       }
     ]
   },
   {
     "week": 6,
-    "theme": "Data for Agentic Systems",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "What Data Do Agents Need?",
-        "description": "Traces, demonstrations, and feedback; data for optimization vs. evaluation; data flywheels; synthetic data generation; collecting data from human-agent interaction.",
-        "readings": [
-          { "text": "Shankar. \"Data Flywheels for LLM Applications.\" (2024).", "url": "https://www.sh-reya.com/blog/ai-engineering-flywheel/" }
-        ],
-        "additional": [
-          { "text": "Tan et al. \"Large Language Models for Data Annotation and Synthesis: A Survey.\" EMNLP (2024).", "url": "https://aclanthology.org/2024.emnlp-main.54/" }
-        ]
+        "date": "Mon Oct 26",
+        "title": "📺 Guest Lecture (TBA)",
+        "description": "",
+        "readings": [],
+        "additional": []
       },
       {
-        "date": "TBA",
-        "title": "Data Selection & Quality",
-        "description": "Finding maximally informative data, filtering and selection strategies, tiny-but-targeted benchmarks, annotation practices, quality assessment, and building datasets from agent traces.",
+        "date": "Wed Oct 28",
+        "title": "What Data Do Agents Need?",
+        "theme": "Data for Agentic Systems",
+        "description": "Traces, demonstrations, and feedback; data for optimization vs. evaluation; data flywheels; synthetic data generation; collecting data from human-agent interaction.",
         "readings": [
-          { "text": "Yang et al. \"SWE-smith: Scaling Data for Software Engineering Agents.\" NeurIPS D&B (2025).", "url": "https://arxiv.org/abs/2504.21798" },
-          { "text": "Shankar et al. \"Who Validates the Validators? Aligning LLM-Assisted Evaluation with Human Preferences.\" UIST (2024).", "url": "https://arxiv.org/abs/2404.12272" }
+          {"text": "Shankar. \"Data Flywheels for LLM Applications.\" (2024).", "url": "https://www.sh-reya.com/blog/ai-engineering-flywheel/"}
         ],
         "additional": [
-          { "text": "Zhou et al. \"LIMA: Less Is More for Alignment.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2305.11206" }
+          {"text": "Tan et al. \"Large Language Models for Data Annotation and Synthesis: A Survey.\" EMNLP (2024).", "url": "https://aclanthology.org/2024.emnlp-main.54/"}
         ]
       }
     ]
   },
   {
     "week": 7,
-    "theme": "Evaluation for Agentic Systems",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Evaluation Fundamentals & Benchmark Design",
-        "description": "Why evals are hard, the 4-tuple framework (request, environment, stopping criteria, scorer), designing each component, properties of good benchmarks, realistic scaffolding, and reliability dimensions.",
+        "date": "Mon Nov 2",
+        "title": "Data Selection & Quality",
+        "theme": "Data for Agentic Systems",
+        "description": "Finding maximally informative data, filtering and selection strategies, tiny-but-targeted benchmarks, annotation practices, quality assessment, and building datasets from agent traces.",
         "readings": [
-          { "text": "Press. \"How to Build Good Language Modeling Benchmarks.\" (2024).", "url": "https://ofir.io/How-to-Build-Good-Language-Modeling-Benchmarks/" }
+          {"text": "Yang et al. \"SWE-smith: Scaling Data for Software Engineering Agents.\" NeurIPS D&B (2025).", "url": "https://arxiv.org/abs/2504.21798"},
+          {"text": "Shankar et al. \"Who Validates the Validators? Aligning LLM-Assisted Evaluation with Human Preferences.\" UIST (2024).", "url": "https://arxiv.org/abs/2404.12272"}
         ],
         "additional": [
-          { "text": "Polo et al. \"tinyBenchmarks: Evaluating LLMs with Fewer Examples.\" ICML (2024).", "url": "https://arxiv.org/abs/2402.14992" }
+          {"text": "Zhou et al. \"LIMA: Less Is More for Alignment.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2305.11206"}
         ]
       },
       {
-        "date": "TBA",
-        "title": "LLM-as-Judge & Evaluation Infrastructure",
-        "description": "The three grader types, designing judge prompts, known biases, pairwise vs. pointwise evaluation, non-determinism metrics (pass@k vs. pass^k), harness design, and Anthropic's 8-step roadmap.",
+        "date": "Wed Nov 4",
+        "title": "Evaluation Fundamentals & Benchmark Design",
+        "theme": "Evaluation for Agentic Systems",
+        "description": "Why evals are hard, the 4-tuple framework (request, environment, stopping criteria, scorer), designing each component, properties of good benchmarks, realistic scaffolding, and reliability dimensions.",
         "readings": [
-          { "text": "Grace et al. \"Demystifying Evals for AI Agents.\" Anthropic (2026).", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" },
-          { "text": "Zheng et al. \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2306.05685" },
-          { "text": "Ryan et al. \"AutoMetrics: Approximate Human Judgements with Automatically Generated Evaluators.\" ICLR (2026).", "url": "https://arxiv.org/abs/2512.17267" }
+          {"text": "Press. \"How to Build Good Language Modeling Benchmarks.\" (2024).", "url": "https://ofir.io/How-to-Build-Good-Language-Modeling-Benchmarks/"}
         ],
         "additional": [
-          { "text": "Zhu et al. \"AutoLibra: Agent Metric Induction from Open-Ended Human Feedback.\" ICLR (2026).", "url": "https://openreview.net/forum?id=4BjGVZ7Bxn" }
+          {"text": "Polo et al. \"tinyBenchmarks: Evaluating LLMs with Fewer Examples.\" ICML (2024).", "url": "https://arxiv.org/abs/2402.14992"}
         ]
       }
     ]
   },
   {
     "week": 8,
-    "theme": "Safety",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Agent Safety & Guardrails",
-        "description": "Privacy risks of tool access, prompt injection (including indirect injection), red-teaming, sandboxing and permission models, output guardrails, liability considerations, responsible deployment, and human-in-the-loop patterns.",
+        "date": "Mon Nov 9",
+        "title": "LLM-as-Judge & Evaluation Infrastructure",
+        "theme": "Evaluation for Agentic Systems",
+        "description": "The three grader types, designing judge prompts, known biases, pairwise vs. pointwise evaluation, non-determinism metrics (pass@k vs. pass^k), harness design, and Anthropic's 8-step roadmap.",
         "readings": [
-          { "text": "Shao et al. \"PrivacyLens: Evaluating Privacy Norm Awareness of LMs in Action.\" NeurIPS D&B (2024).", "url": "https://arxiv.org/abs/2409.00138" },
-          { "text": "Zhang & Yang. \"Searching for Privacy Risks in LLM Agents via Simulation.\" arXiv (2025).", "url": "https://arxiv.org/abs/2508.10880" },
-          { "text": "Li. \"Agentic LLMs as Powerful Deanonymizers.\" arXiv (2026).", "url": "https://arxiv.org/abs/2601.05918" }
+          {"text": "Grace et al. \"Demystifying Evals for AI Agents.\" Anthropic (2026).", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"},
+          {"text": "Zheng et al. \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2306.05685"},
+          {"text": "Ryan et al. \"AutoMetrics: Approximate Human Judgements with Automatically Generated Evaluators.\" ICLR (2026).", "url": "https://arxiv.org/abs/2512.17267"}
         ],
         "additional": [
-          { "text": "Wen et al. \"Contextualized Privacy Defense for LLM Agents.\" arXiv (2026).", "url": "https://arxiv.org/abs/2603.02983" },
-          { "text": "OpenAI. \"Understanding Prompt Injections: A Frontier Security Challenge.\" (2025).", "url": "https://openai.com/index/prompt-injections/" },
-          { "text": "Anthropic. \"Anthropic's Responsible Scaling Policy.\" (2023).", "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy" }
+          {"text": "Zhu et al. \"AutoLibra: Agent Metric Induction from Open-Ended Human Feedback.\" ICLR (2026).", "url": "https://openreview.net/forum?id=4BjGVZ7Bxn"}
         ]
       },
       {
-        "date": "TBA",
-        "title": "📺 Guest Lecture (TBA)",
-        "description": "",
-        "readings": [],
-        "additional": []
+        "date": "Wed Nov 11",
+        "title": "Agent Safety & Guardrails",
+        "theme": "Safety",
+        "description": "Privacy risks of tool access, prompt injection (including indirect injection), red-teaming, sandboxing and permission models, output guardrails, liability considerations, responsible deployment, and human-in-the-loop patterns.",
+        "readings": [
+          {"text": "Shao et al. \"PrivacyLens: Evaluating Privacy Norm Awareness of LMs in Action.\" NeurIPS D&B (2024).", "url": "https://arxiv.org/abs/2409.00138"},
+          {"text": "Zhang & Yang. \"Searching for Privacy Risks in LLM Agents via Simulation.\" arXiv (2025).", "url": "https://arxiv.org/abs/2508.10880"},
+          {"text": "Li. \"Agentic LLMs as Powerful Deanonymizers.\" arXiv (2026).", "url": "https://arxiv.org/abs/2601.05918"}
+        ],
+        "additional": [
+          {"text": "Wen et al. \"Contextualized Privacy Defense for LLM Agents.\" arXiv (2026).", "url": "https://arxiv.org/abs/2603.02983"},
+          {"text": "OpenAI. \"Understanding Prompt Injections: A Frontier Security Challenge.\" (2025).", "url": "https://openai.com/index/prompt-injections/"},
+          {"text": "Anthropic. \"Anthropic's Responsible Scaling Policy.\" (2023).", "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy"}
+        ]
       }
     ]
   },
   {
     "week": 9,
-    "theme": "Coding Agents & Proactive Agents",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Coding & Software Agents",
-        "description": "How coding agents work end-to-end; SWE-agent, Claude Code, and OpenHands architectures; scaffolds as design decisions; SWE-bench and the 4-tuple framework in practice; the future of software development with agents.",
-        "readings": [
-          { "text": "Yang et al. \"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2405.15793" },
-          { "text": "Wang et al. \"OpenHands: An Open Platform for AI Software Developers.\" ICLR (2025).", "url": "https://arxiv.org/abs/2407.16741" }
-        ],
-        "additional": [
-          { "text": "Anthropic. \"Claude Code: Best Practices for Agentic Coding.\" (2025).", "url": "https://www.anthropic.com/engineering/claude-code-best-practices" },
-          { "text": "Young. \"Effective Harnesses for Long-Running Agents.\" Anthropic (2025).", "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents" },
-          { "text": "Jimenez et al. \"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.06770" }
-        ]
+        "date": "Mon Nov 16",
+        "title": "📺 Guest Lecture (TBA)",
+        "description": "",
+        "readings": [],
+        "additional": []
       },
       {
-        "date": "TBA",
-        "title": "Proactive Agents",
-        "description": "From reactive to proactive; General User Models (GUM); Next Action Prediction; open-source proactive personal agents; privacy and trust implications; and when agents should initiate vs. wait (mixed initiative).",
+        "date": "Wed Nov 18",
+        "title": "Coding & Software Agents",
+        "theme": "Coding Agents & Proactive Agents",
+        "description": "How coding agents work end-to-end; SWE-agent, Claude Code, and OpenHands architectures; scaffolds as design decisions; SWE-bench and the 4-tuple framework in practice; the future of software development with agents.",
         "readings": [
-          { "text": "Shaikh et al. \"Creating General User Models from Computer Use.\" UIST (2025).", "url": "https://arxiv.org/abs/2505.10831" }
+          {"text": "Yang et al. \"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2405.15793"},
+          {"text": "Wang et al. \"OpenHands: An Open Platform for AI Software Developers.\" ICLR (2025).", "url": "https://arxiv.org/abs/2407.16741"}
         ],
         "additional": [
-          { "text": "Shaikh et al. \"Learning Next Action Predictors from Human-Computer Interaction.\" arXiv (2026).", "url": "https://arxiv.org/abs/2603.05923" },
-          { "text": "Steinberger. \"OpenClaw: Open-source proactive AI agent.\" (2025).", "url": "https://github.com/openclaw/openclaw" }
+          {"text": "Anthropic. \"Claude Code: Best Practices for Agentic Coding.\" (2025).", "url": "https://www.anthropic.com/engineering/claude-code-best-practices"},
+          {"text": "Young. \"Effective Harnesses for Long-Running Agents.\" Anthropic (2025).", "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"},
+          {"text": "Jimenez et al. \"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.06770"}
         ]
       }
     ]
   },
   {
     "week": 10,
-    "theme": "Open Problems & Final Demos",
     "lectures": [
       {
-        "date": "TBA",
-        "title": "Frontiers & Open Problems",
-        "description": "Multimodal agents, web agents and computer use, science agents, long-running agent architectures, production and observability (tracing, monitoring, cost management), and open problems in reliability, scalability, and interpretability.",
+        "date": "Mon Nov 23",
+        "title": "No Class — Thanksgiving Recess",
+        "holiday": true,
         "readings": [],
+        "additional": []
+      },
+      {
+        "date": "Wed Nov 25",
+        "title": "No Class — Thanksgiving Recess",
+        "holiday": true,
+        "readings": [],
+        "additional": []
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "lectures": [
+      {
+        "date": "Mon Nov 30",
+        "title": "Proactive Agents",
+        "theme": "Coding Agents & Proactive Agents",
+        "description": "From reactive to proactive; General User Models (GUM); Next Action Prediction; open-source proactive personal agents; privacy and trust implications; and when agents should initiate vs. wait (mixed initiative).",
+        "readings": [
+          {"text": "Shaikh et al. \"Creating General User Models from Computer Use.\" UIST (2025).", "url": "https://arxiv.org/abs/2505.10831"}
+        ],
         "additional": [
-          { "text": "Xie et al. \"OSWorld: Benchmarking Multimodal Agents in Real Computer Environments.\" NeurIPS D&B (2024).", "url": "https://arxiv.org/abs/2404.07972" },
-          { "text": "Yao et al. \"WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents.\" NeurIPS (2022).", "url": "https://arxiv.org/abs/2207.01206" }
+          {"text": "Shaikh et al. \"Learning Next Action Predictors from Human-Computer Interaction.\" arXiv (2026).", "url": "https://arxiv.org/abs/2603.05923"},
+          {"text": "Steinberger. \"OpenClaw: Open-source proactive AI agent.\" (2025).", "url": "https://github.com/openclaw/openclaw"}
         ]
       },
       {
-        "date": "TBA",
+        "date": "Wed Dec 2",
+        "title": "Frontiers & Open Problems",
+        "theme": "Open Problems & Final Demos",
+        "description": "Multimodal agents, web agents and computer use, science agents, long-running agent architectures, production and observability (tracing, monitoring, cost management), and open problems in reliability, scalability, and interpretability.",
+        "readings": [],
+        "additional": [
+          {"text": "Xie et al. \"OSWorld: Benchmarking Multimodal Agents in Real Computer Environments.\" NeurIPS D&B (2024).", "url": "https://arxiv.org/abs/2404.07972"},
+          {"text": "Yao et al. \"WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents.\" NeurIPS (2022).", "url": "https://arxiv.org/abs/2207.01206"}
+        ]
+      }
+    ]
+  },
+  {
+    "week": "—",
+    "lectures": [
+      {
+        "date": "Finals Week (Dec 7–11)",
         "title": "Final Project Demo Day",
-        "description": "",
+        "theme": "Open Problems & Final Demos",
+        "description": "Held during the end-quarter examination period; exact time and location TBA.",
         "readings": [],
         "additional": []
       }

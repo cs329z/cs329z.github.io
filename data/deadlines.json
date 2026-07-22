@@ -7,5 +7,5 @@
   { "week": 7,  "deadline": "HW3 Released",                      "date": "TBA", "time": "TBA" },
   { "week": 8,  "deadline": "HW2 Due",                           "date": "TBA", "time": "TBA" },
   { "week": 9,  "deadline": "HW3 Due",                           "date": "TBA", "time": "TBA" },
-  { "week": 10, "deadline": "Final Submission & Final System Demo", "date": "TBA", "time": "TBA" }
+  { "week": "Finals", "deadline": "Final Submission & Final System Demo", "date": "TBA", "time": "TBA" }
 ]

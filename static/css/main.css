@@ -125,10 +125,14 @@ h3 { font-size: 16px; font-weight: bold; }
   }
   #schedule td:nth-of-type(1):before { content: "Week"; }
   #schedule td:nth-of-type(2):before { content: "Date"; }
-  #schedule td:nth-of-type(3):before { content: "Theme"; }
+  #schedule td:nth-of-type(3):before { content: "Lecture"; }
   #schedule td:nth-of-type(4):before { content: "Material"; }
   #deadlines td:nth-of-type(1):before { content: "Week"; }
   #deadlines td:nth-of-type(2):before { content: "Deadline"; }
   #deadlines td:nth-of-type(3):before { content: "Date"; }
   #deadlines td:nth-of-type(4):before { content: "Time"; }
 }
+
+/* Holiday / no-class rows in the schedule */
+.table tbody tr.holiday td { color: #999; }
+.table tbody tr.holiday .lec-title { font-weight: 400; font-style: italic; }

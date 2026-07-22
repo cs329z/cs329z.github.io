@@ -5,7 +5,7 @@ title: Logistics
 ### Course Info
 
 - **Location:** TBA
-- **Timing:** Twice weekly; days and time TBA.
+- **Timing:** Mondays & Wednesdays; time TBA.
 - **Units:** 3–4
 - **Contact:** TBA
 

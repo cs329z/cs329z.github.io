@@ -46,22 +46,30 @@
 <!-- Schedule -->
 <div class="container sec" id="schedule" style="margin-top:-20px">
   <h2>Class Schedule</h2>
-  <p>Note: dates are TBA; the schedule is tentative and subject to change. Lecture materials will be linked here as they are released.</p>
+  <p>Note: the schedule is tentative and subject to change. Classes meet Mondays and Wednesdays. Lecture materials will be linked here as they are released.</p>
   <table class="table">
     <colgroup>
       <col style="width:5%"><col style="width:8%"><col style="width:42%"><col style="width:45%">
     </colgroup>
     <thead>
-      <tr class="active"><th>Week</th><th>Date</th><th>Theme</th><th>Course Material</th></tr>
+      <tr class="active"><th>Week</th><th>Date</th><th>Lecture</th><th>Course Material</th></tr>
     </thead>
     <tbody>
+      {% set ns = namespace(last_theme=none, block=0) %}
       {% for week in schedule %}
         {% for lec in week.lectures %}
-        <tr{% if week.week is even %} class="alt"{% endif %}>
+        {% if lec.theme and lec.theme != ns.last_theme %}
+        {% set ns.last_theme = lec.theme %}
+        {% set ns.block = ns.block + 1 %}
+        {% set ns.new_theme = true %}
+        {% else %}
+        {% set ns.new_theme = false %}
+        {% endif %}
+        <tr class="{% if ns.block is even %}alt{% endif %}{% if lec.holiday %} holiday{% endif %}">
           <td>{{ week.week }}</td>
           <td>{{ lec.date }}</td>
           <td>
-            {% if loop.first %}<span class="theme-tag">{{ week.theme }}</span>{% endif %}
+            {% if ns.new_theme %}<span class="theme-tag">{{ lec.theme }}</span>{% endif %}
             <span class="lec-title">{{ lec.title }}</span>
             {% if lec.description %}<span class="lec-desc">{{ lec.description }}</span>{% endif %}
           </td>
