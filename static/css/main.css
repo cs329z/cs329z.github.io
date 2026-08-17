@@ -60,6 +60,15 @@ h3 { font-size: 16px; font-weight: bold; }
 .bold { font-weight: bold; }
 .red { color: #b00020; }
 
+/* Prose lists (e.g. the grading breakdown): tighter nesting, muted sub-items */
+.sec > ul { padding-left: 20px; }
+.sec > ul > li { margin-bottom: 6px; }
+.sec > ul ul {
+  margin: 3px 0 8px; padding-left: 20px;
+  list-style-type: circle; color: #555;
+}
+.sec > ul ul > li { margin-bottom: 1px; }
+
 /* Tables */
 .table { width: 100%; max-width: 100%; border-collapse: collapse; margin-bottom: 20px; }
 .table th, .table td { padding: 8px; vertical-align: top; text-align: left; border-top: 1px solid #ddd; }
