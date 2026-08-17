@@ -3,8 +3,8 @@ title: Coursework
 ---
 
 Two fully applied homework assignments build on the components covered in lecture. Each homework is
-followed by a **10-minute oral exam** where students explain their design decisions and tradeoffs and
-demonstrate understanding.
+followed by a **10-minute HW-based quiz** where students explain their design decisions and tradeoffs
+and demonstrate understanding.
 
 - **HW1: Build an Agentic System** (Weeks 3–6). Given a repository of research papers, build an agent
   that answers science questions by retrieving relevant papers and reasoning over them. Part A builds
@@ -28,18 +28,18 @@ watches and reviews **three** videos from other students (due after Thanksgiving
 
 ### Grading
 
-- **Project — 35%**
+- **Project — 50%**
     - Proposal — 5%
     - Midway report — 5%
     - Midpoint demo — 5%
-    - Final submission — 5%
-    - Final system demo — 15%
-- **Homework — 30%**
-    - HW1: Build an Agentic System — 15%
-    - HW2: Evaluate an Agent — 15%
-- **Oral check-ins — 20%**
-    - Oral exam 1 (after HW1) — 10%
-    - Oral exam 2 (after HW2) — 10%
+    - Final submission — 15%
+    - Final system demo — 20%
+- **Homework — 20%**
+    - HW1: Build an Agentic System — 10%
+    - HW2: Evaluate an Agent — 10%
+- **HW-based quizzes — 15%**
+    - Quiz 1 (after HW1) — 7.5%
+    - Quiz 2 (after HW2) — 7.5%
 - **Paper video & peer reviews — 10%**
     - Paper video — 7%
     - Peer reviews (3 × 1%) — 3%

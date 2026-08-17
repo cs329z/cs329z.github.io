@@ -11,6 +11,6 @@ appropriate components, collect and curate data, build evaluations, and reason a
 tradeoffs that arise when building these systems in practice.
 
 Students first build core components (RAG, tool use, agent loops) from scratch, then learn how
-frameworks like DSPy abstract these patterns. Through three fully applied homework assignments and a
+frameworks like DSPy abstract these patterns. Through two fully applied homework assignments and a
 quarter-long project, students gain hands-on experience building, optimizing, and evaluating agentic
 systems.
