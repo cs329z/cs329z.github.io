@@ -16,8 +16,8 @@ demonstrate understanding.
 
 ### Paper Video & Peer Reviews
 
-Each student records a **10-minute video** about a recent agent paper of their choosing, then watches and
-reviews **three** videos from other students.
+Each student records a **10-minute video** about a recent agent paper of their choosing (due Week 8), then
+watches and reviews **three** videos from other students (due after Thanksgiving).
 
 - **Video (7%).** 2% selection of a substantive recent paper and a solid explanation of it; 2% your own
   critique or insight — what you agree/disagree with, limitations, or an interesting question it raises;

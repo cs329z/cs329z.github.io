@@ -1,11 +1,12 @@
 [
-  { "week": 3,  "deadline": "HW1 Released",                      "date": "TBA", "time": "TBA" },
-  { "week": 3,  "deadline": "Project Proposal Due",              "date": "TBA", "time": "TBA" },
-  { "week": 6,  "deadline": "HW1 Due",                           "date": "TBA", "time": "TBA" },
-  { "week": 6,  "deadline": "HW2 Released",                      "date": "TBA", "time": "TBA" },
-  { "week": 7,  "deadline": "Midway Report Due & Midpoint Demo", "date": "TBA", "time": "TBA" },
-  { "week": 9,  "deadline": "HW2 Due",                           "date": "TBA", "time": "TBA" },
-  { "week": "TBA", "deadline": "Paper Video Due (10 min)",       "date": "TBA", "time": "TBA" },
-  { "week": "TBA", "deadline": "Peer Reviews Due (3 videos)",    "date": "TBA", "time": "TBA" },
-  { "week": "Finals", "deadline": "Final Submission & Final System Demo", "date": "TBA", "time": "TBA" }
+  { "week": 3,  "deadline": "HW1 Released",                    "date": "Mon Oct 5",  "time": "—" },
+  { "week": 3,  "deadline": "Project Proposal Due",            "date": "Fri Oct 9",  "time": "11:59 p.m." },
+  { "week": 6,  "deadline": "HW2 Released",                    "date": "Mon Oct 26", "time": "—" },
+  { "week": 6,  "deadline": "HW1 Due",                         "date": "Fri Oct 30", "time": "11:59 p.m." },
+  { "week": 7,  "deadline": "Midpoint Demo",                   "date": "Wed Nov 4",  "time": "In class" },
+  { "week": 7,  "deadline": "Midway Report Due",               "date": "Fri Nov 6",  "time": "11:59 p.m." },
+  { "week": 8,  "deadline": "Paper Video Due (10 min)",        "date": "Fri Nov 13", "time": "11:59 p.m." },
+  { "week": 9,  "deadline": "HW2 Due",                         "date": "Fri Nov 20", "time": "11:59 p.m." },
+  { "week": 11, "deadline": "Peer Reviews Due (3 videos)",     "date": "Mon Nov 30", "time": "11:59 p.m." },
+  { "week": "Finals", "deadline": "Final Submission & Final System Demo", "date": "Dec 7–11", "time": "TBA" }
 ]

@@ -17,9 +17,19 @@ title: Logistics
 
 - **Any of [CS224N](https://web.stanford.edu/class/cs224n/), [CS224U](https://web.stanford.edu/class/cs224u/), [CS224V](https://web.stanford.edu/class/cs224v/), [CS336](https://stanford-cs336.github.io/), or equivalent background in natural language processing.**
 
-### Honor Code
+### Honor Code & AI Tools
 
-- Collaboration, AI-tools, and academic-integrity policies: TBA.
+Like every class at Stanford, we take the [Honor Code](https://ed.stanford.edu/academics/masters-handbook/honor-code)
+seriously. Write your own solutions, and don't look up solutions or existing implementations of the
+assignments online. We sometimes use automated methods to detect overly similar submissions.
+
+This is a course about building with AI, so we expect you to use it. Treat generative AI tools as
+collaborators you think alongside — asking them to explain a concept, debug your code, or critique a
+design is fair game and encouraged. What isn't: soliciting finished answers or copying solutions,
+whether from a model, a classmate, or the web. Using AI tools to substantially complete an assignment
+is an Honor Code violation. Oral exams are individual and closed-book. When in doubt, ask us; see
+Stanford's [Generative AI Policy Guidance](https://communitystandards.stanford.edu/policies-guidance/bca-guidance-recommendations#generative-ai-policy-guidance)
+for the university-wide baseline.
 
 ### Academic Accommodations
 
