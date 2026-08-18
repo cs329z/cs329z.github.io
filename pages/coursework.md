@@ -31,9 +31,9 @@ watches and reviews **three** videos from other students (due after Thanksgiving
 - **Project — 50%**
     - Proposal — 5%
     - Midway report — 5%
-    - Midpoint demo — 5%
+    - Midpoint demo — 7%
     - Final submission — 15%
-    - Final system demo — 20%
+    - Final system demo — 18%
 - **Homework — 20%**
     - HW1: Build an Agentic System — 10%
     - HW2: Evaluate an Agent — 10%
