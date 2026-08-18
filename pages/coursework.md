@@ -28,20 +28,20 @@ watches and reviews **three** videos from other students (due after Thanksgiving
 
 ### Grading
 
-- **Project — 50%**
-    - Proposal — 5%
-    - Midway report — 5%
-    - Midpoint demo — 7%
-    - Final submission — 15%
-    - Final system demo — 18%
-- **Homework — 20%**
-    - HW1: Build an Agentic System — 10%
-    - HW2: Evaluate an Agent — 10%
-- **HW-based quizzes — 15%**
-    - Quiz 1 (after HW1) — 7.5%
-    - Quiz 2 (after HW2) — 7.5%
-- **Paper video & peer reviews — 10%**
-    - Paper video — 7%
-    - Peer reviews (3 × 1%) — 3%
-- **Participation — 5%**
+- **Project [50%]**
+    - Proposal [5%]
+    - Midway report [5%]
+    - Midpoint demo [7%]
+    - Final submission [15%]
+    - Final system demo [18%]
+- **Homework [20%]**
+    - HW1: Build an Agentic System [10%]
+    - HW2: Evaluate an Agent [10%]
+- **HW-based quizzes [15%]**
+    - Quiz 1 (after HW1) [7.5%]
+    - Quiz 2 (after HW2) [7.5%]
+- **Paper video & peer reviews [10%]**
+    - Paper video [7%]
+    - Peer reviews (3 × 1%) [3%]
+- **Participation [5%]**
     - In-class discussion, project teamwork, and recitations
