@@ -64,6 +64,6 @@ server.py    Flask app + static-site generator
 - Confirm instructor homepage URLs in `data/staff.json`
 - Fill in schedule dates in `data/schedule.json` (currently `TBA`)
 - Fill in deadline dates/times in `data/deadlines.json`
-- Fill in logistics: location, timing, office hours, contact, honor code (`pages/logistics.md`)
+- Fill in remaining logistics: office hours and contact (`pages/logistics.md`)
 - Add CAs to `data/staff.json` (`cas` array) as confirmed
 - Add lecture-material links in `data/schedule.json` as released

@@ -4,9 +4,12 @@ title: Logistics
 
 ### Course Info
 
-- **Location:** TBA
-- **Timing:** Mondays & Wednesdays; time TBA.
-- **Units:** 3–4
+- **Units:** 3
+- **Class number:** 27855
+- **Grading:** Letter or Credit/No Credit
+- **Session:** 2026–2027 Autumn 1
+- **Meeting time:** Mondays and Wednesdays, 1:30–2:50 p.m.
+- **Location:** Packard 101
 - **Contact:** TBA
 
 ### Office Hours
