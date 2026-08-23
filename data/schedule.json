@@ -179,9 +179,10 @@
         "theme": "Evaluation for Agentic Systems",
         "description": "Why evals are hard, the 4-tuple framework (request, environment, stopping criteria, scorer), designing each component, properties of good benchmarks, realistic scaffolding, and reliability dimensions.",
         "readings": [
-          {"text": "Press. \"How to Build Good Language Modeling Benchmarks.\" (2024).", "url": "https://ofir.io/How-to-Build-Good-Language-Modeling-Benchmarks/"}
+          {"text": "Zhu et al. \"Establishing Best Practices for Building Rigorous Agentic Benchmarks.\" (2025).", "url": "https://arxiv.org/abs/2507.02825"}
         ],
         "additional": [
+          {"text": "Press. \"How to Build Good Language Modeling Benchmarks.\" (2024).", "url": "https://ofir.io/How-to-Build-Good-Language-Modeling-Benchmarks/"},
           {"text": "Polo et al. \"tinyBenchmarks: Evaluating LLMs with Fewer Examples.\" ICML (2024).", "url": "https://arxiv.org/abs/2402.14992"}
         ]
       }
