@@ -10,7 +10,7 @@ title: Logistics
 - **Session:** 2026–2027 Autumn 1
 - **Meeting time:** Mondays and Wednesdays, 1:30–2:50 p.m.
 - **Location:** Packard 101
-- **Contact:** TBA
+- **Contact:** [cs329z-staff@lists.stanford.edu](mailto:cs329z-staff@lists.stanford.edu)
 
 ### Office Hours
 
@@ -33,6 +33,10 @@ whether from a model, a classmate, or the web. Using AI tools to substantially c
 is an Honor Code violation. HW-based quizzes are individual and closed-book. When in doubt, ask us; see
 Stanford's [Generative AI Policy Guidance](https://communitystandards.stanford.edu/policies-guidance/bca-guidance-recommendations#generative-ai-policy-guidance)
 for the university-wide baseline.
+
+### Lecture Recordings
+
+Video cameras located in the back of the room will capture the instructor presentations in this course. For your convenience, you can access these recordings by logging into the course Canvas site. These recordings might be reused in other Stanford courses, viewed by other Stanford students, faculty, or staff, or used for other education and research purposes. Note that while the cameras are positioned with the intention of recording only the instructor, occasionally a part of your image or voice might be incidentally captured. If you have questions, please contact a member of the teaching team.
 
 ### Academic Accommodations
 
