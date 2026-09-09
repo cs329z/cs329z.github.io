@@ -6,10 +6,10 @@ Two fully applied homework assignments build on the components covered in lectur
 followed by a **10-minute HW-based quiz** where students explain their design decisions and tradeoffs
 and demonstrate understanding.
 
-- **HW1: Build an Agentic System** (Weeks 3–6). Given a repository of research papers, build an agent
-  that answers science questions by retrieving relevant papers and reasoning over them. Part A builds
-  the agent from scratch with litellm (RAG + tool use + an agent loop with a reasoning pattern such as
-  ReAct); Part B rebuilds key components with DSPy and reflects on what the framework abstracts.
+- **HW1: Build an Agentic Harness** (Weeks 3–6). Build a company's internal AI assistant from
+  scratch, with no agent frameworks: just a chat-completion call and code you write yourself. Start with
+  LLM pipelines that retrieve and reason over a real corporate email archive, then grow them into a full
+  agent harness with tools, a terminal, memory, and a human in the loop.
 - **HW2: Evaluate an Agent** (Weeks 6–9). Given a pre-built agent, design a comprehensive evaluation
   suite with code-based graders, at least one LLM-as-judge eval, benchmark tasks built with the 4-tuple
   framework (request, environment, stopping criteria, scorer), and error analysis.
@@ -35,7 +35,7 @@ watches and reviews **three** videos from other students (due after Thanksgiving
     - Final submission [15%]
     - Final system demo [18%]
 - **Homework [20%]**
-    - HW1: Build an Agentic System [10%]
+    - HW1: Build an Agentic Harness [10%]
     - HW2: Evaluate an Agent [10%]
 - **HW-based quizzes [15%]**
     - Quiz 1 (after HW1) [7.5%]
