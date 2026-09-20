@@ -36,9 +36,16 @@ pages = FlatPages(app)
 freezer = Freezer(app)
 
 
+def asset_version():
+    """Short hash of the stylesheet, appended to its URL to bust browser caches."""
+    import hashlib
+    with open(os.path.join("static", "css", "main.css"), "rb") as f:
+        return hashlib.sha1(f.read()).hexdigest()[:8]
+
+
 @app.context_processor
 def inject_globals():
-    return {"staging": STAGING}
+    return {"staging": STAGING, "asset_version": asset_version()}
 
 
 def load_json(name):
