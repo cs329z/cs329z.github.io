@@ -40,8 +40,8 @@ With the midpoint demo and the final report, you must also submit a link to a Gi
 your project's code. The repository must include a README that walks a reader through running the project:
 how to install dependencies, configure any API keys or credentials, run the agent, and reproduce the
 evaluation reported in your paper. Write it so that a classmate who has never seen your code can get the
-system running. Your mentor will use the README when grading (reproducibility is scored in the final report), and it will
-also facilitate peer review of your project.
+system running. Your mentor will use the README when grading (reproducibility is scored separately from the final report),
+and it will also facilitate peer review of your project.
 
 ### Milestones
 
@@ -94,7 +94,7 @@ Progress sections. Required sections:
 The final system demo is presented live on Demo Day during finals week. The final report is an 8-page paper in
 ICLR submission format, adhering to ICLR guidelines concerning references, layout, supplementary
 materials, and so forth. Submit it together with a link to your final GitHub repository, whose README must
-let a reader run the system and reproduce your results. The report is graded out of 25 points. Required
+let a reader run the system and reproduce your results. The report is graded out of 20 points. Required
 components:
 
 1. **Introduction** (2 points)
@@ -104,9 +104,7 @@ components:
 5. **Results** (10 points): Your evaluation of the system over a meaningful set of tasks, with baselines or
    comparisons, and an error analysis of its failure modes. A single working example is not an evaluation.
 6. **Discussion / Conclusion** (1 point)
-7. **Reproducibility** (5 points): Graded on whether we can reproduce the results in your paper by
-   following your README and running your code.
-8. **Safety & Ethical Considerations:** An explicit discussion of any potential safety or ethical issues,
+7. **Safety & Ethical Considerations:** An explicit discussion of any potential safety or ethical issues,
    such as the implications of the project, the use of the data, the actions the agent is permitted to
    take, and potential applications of your work. Here are some recommendations from
    [ACL's ethics guidelines](https://2021.aclweb.org/ethics/Ethics-FAQ/): "Ethical questions may arise when
@@ -114,7 +112,7 @@ components:
    collection and release of data, inference of information or judgments about individuals, real-world
    impact of the deployment of language technologies, and environmental consequences of large-scale
    computation."
-9. **Authorship Statement:** At the end of your paper (after the Acknowledgments section in the template),
+8. **Authorship Statement:** At the end of your paper (after the Acknowledgments section in the template),
    include a brief authorship statement explaining how the individual authors contributed to the project.
    You are free to include whatever information you deem important to convey. For guidance, see the
    second page, right column, of this [guidance for PNAS authors](http://blog.pnas.org/iforc.pdf). We
@@ -122,7 +120,12 @@ components:
    for singly-authored papers, because we want to know whether your project is a collaboration with people
    outside of the class. Only in extreme cases, and after discussion with the team, would we consider giving
    separate grades to team members based on this statement.
-10. **References**
+9. **References**
 
 The Safety & Ethical Considerations, Authorship Statement, and References sections are required but not
 separately scored; a missing section will cost points.
+
+**Reproducibility (5 points).** Separately from the paper, 5 points are awarded for reproducibility. We will
+follow your README and run your code on a simple instance, such as a single task or example from your
+evaluation, to check that the system runs and behaves as described in the paper. We will not rerun your full
+evaluation, so make sure the quick-start path in your README works out of the box.
