@@ -1,0 +1,20 @@
+# On every push to `staging`, re-run the Pages deployment from `main`.
+# deploy.yml builds both branches, so this refreshes
+# https://cs329z.stanford.edu/staging/ without touching the live site.
+name: Publish staging preview
+
+on:
+  push:
+    branches: [staging]
+
+permissions:
+  actions: write
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}

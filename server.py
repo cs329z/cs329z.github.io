@@ -10,6 +10,7 @@ Content lives in editable source files, rendered by Jinja2 templates:
 
 Run locally:   uv run python server.py         (serves http://localhost:5001)
 Build static:  uv run python server.py build   (writes build/, deploy anywhere)
+Staging build: SITE_STAGING=1 uv run python server.py build
 """
 import json
 import os
@@ -26,11 +27,18 @@ FLATPAGES_MARKDOWN_EXTENSIONS = ["tables", "fenced_code", "sane_lists"]
 FREEZER_DESTINATION = "build"
 FREEZER_RELATIVE_URLS = True          # so the site works from any subpath / file://
 FREEZER_IGNORE_MIMETYPE_WARNINGS = True
+# Set SITE_STAGING=1 to build the staging preview (adds a banner + noindex).
+STAGING = os.environ.get("SITE_STAGING") == "1"
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
+
+
+@app.context_processor
+def inject_globals():
+    return {"staging": STAGING}
 
 
 def load_json(name):

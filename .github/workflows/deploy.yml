@@ -1,3 +1,10 @@
+# Builds the live site from `main` and the staging preview from `staging`,
+# then publishes both to GitHub Pages in one deployment:
+#   main    -> https://cs329z.stanford.edu/
+#   staging -> https://cs329z.stanford.edu/staging/
+#
+# Runs on every push to main. Pushes to `staging` trigger it too, via
+# staging.yml (the github-pages environment only lets `main` deploy).
 name: Build & deploy to GitHub Pages
 
 on:
@@ -19,12 +26,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+      - uses: actions/checkout@v4
+        with:
+          ref: staging
+          path: staging
+        continue-on-error: true   # no staging branch yet -> live site only
       - uses: astral-sh/setup-uv@v5
-      - name: Build static site
+      - name: Build live site (main)
+        working-directory: main
         run: uv run python server.py build
+      - name: Build staging preview (staging)
+        if: hashFiles('staging/server.py') != ''
+        working-directory: staging
+        run: |
+          SITE_STAGING=1 uv run python server.py build
+          mkdir -p ../main/build/staging
+          cp -R build/. ../main/build/staging/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: main/build
 
   deploy:
     needs: build

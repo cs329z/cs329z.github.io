@@ -49,6 +49,27 @@ from any host or even opened directly). Deploy `build/` anywhere.
 `.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every
 push to `main`. Enable it once under **Settings → Pages → Source: GitHub Actions**.
 
+| Branch | Published at |
+|---|---|
+| `main` | https://cs329z.stanford.edu/ (live) |
+| `staging` | https://cs329z.stanford.edu/staging/ (preview, with a banner, `noindex`) |
+
+### Staging workflow
+
+Commit drafts to `staging` and share the preview link with co-instructors;
+merge into `main` when they're approved:
+
+```bash
+git checkout staging && git merge main   # keep staging current
+# ...edit, commit, push -> preview updates in a minute or two...
+git checkout main && git merge staging && git push   # go live
+```
+
+A push to `staging` runs `staging.yml`, which re-triggers `deploy.yml` on
+`main`; that workflow builds both branches into one Pages deployment (the
+`github-pages` environment only permits deployments from `main`). If `staging`
+is ever deleted, the live site still deploys on its own.
+
 ## Structure
 
 ```

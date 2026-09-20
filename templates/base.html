@@ -7,7 +7,8 @@
 
   <title>{% block title %}Stanford CS329Z | Engineering AI Agents{% endblock %}</title>
   <meta name="description" content="{% block description %}Official course website for Stanford CS329Z: Engineering AI Agents — schedule, deadlines, coursework, project, and logistics.{% endblock %}">
-  <link rel="canonical" href="https://cs329z.github.io/">
+  <link rel="canonical" href="https://cs329z.stanford.edu/">
+  {% if staging %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ self.title() }}">
   <meta property="og:description" content="{{ self.description() }}">
@@ -39,6 +40,13 @@
     </div>
   </div>
 </nav>
+
+{% if staging %}
+<div style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffe69c;text-align:center;padding:8px 15px;font-weight:700">
+  Staging preview — this is the <code>staging</code> branch, not the live site.
+  The live site is at <a href="https://cs329z.stanford.edu/">cs329z.stanford.edu</a>.
+</div>
+{% endif %}
 
 <main>
   {% block content %}{% endblock %}
