@@ -10,6 +10,11 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
+  font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../fonts/source-sans-pro-600.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
   font-style: normal; font-weight: 700; font-display: swap;
   src: url(../fonts/source-sans-pro-700.woff2) format('woff2');
 }
@@ -58,7 +63,7 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 /* Offset anchor jumps so section headers clear the fixed navbar */
 .sec[id] { scroll-margin-top: 62px; }
 .sechighlight { background-color: #f7f6f1; }
-.bold, strong, b { font-weight: 700; }
+.bold, strong, b { font-weight: 600; }   /* semibold: subtler than the 700 headings */
 .red { color: #b00020; }
 
 /* Prose lists (e.g. the grading breakdown): tighter nesting, muted sub-items */
