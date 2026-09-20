@@ -34,6 +34,15 @@ The proposal, midway report, and final report must use the
 [ICLR submission format](https://www.overleaf.com/latex/templates/template-for-iclr-2025-conference-submission/gqzkdyycxtvt)
 and follow the ICLR requirements, except where we specify otherwise below. Page limits exclude references.
 
+### Code Submission
+
+With the midpoint demo and the final report, you must also submit a link to a GitHub repository containing
+your project's code. The repository must include a README that walks a reader through running the project:
+how to install dependencies, configure any API keys or credentials, run the agent, and reproduce the
+evaluation reported in your paper. Write it so that a classmate who has never seen your code can get the
+system running. Your mentor will use the README when grading, and it will also facilitate peer review of
+your project.
+
 ### Milestones
 
 Exact dates and times are listed in the [Deadlines](#deadlines) table above, and the weight of each
@@ -61,7 +70,8 @@ on its own merits regardless of what you end up building. Suggested structure:
 #### 2. Midpoint Demo & Midway Report (Week 7)
 
 The midpoint demo is a recorded video of your system, submitted rather than presented in class; a working
-prototype is expected. The midway report is a short,
+prototype is expected. Alongside the video, submit a link to your GitHub repository with a README for running
+the prototype (see [Code Submission](#project) above). The midway report is a short,
 structured paper (3–4 pages) designed to help you establish your core system and evaluation framework. No
 prior-work discussion is needed. Grading is based mainly on the Environment & Data, Methods, and Summary of
 Progress sections. Required sections:
@@ -83,7 +93,9 @@ Progress sections. Required sections:
 
 The final system demo is presented live on Demo Day during finals week. The final report is an 8-page paper in
 ICLR submission format, adhering to ICLR guidelines concerning references, layout, supplementary
-materials, and so forth. It is graded out of 20 points. Required components:
+materials, and so forth. Submit it together with a link to your final GitHub repository, whose README must
+let a reader run the system and reproduce your results. The report is graded out of 20 points. Required
+components:
 
 1. **Introduction** (2 points)
 2. **Related Work** (1 point)
