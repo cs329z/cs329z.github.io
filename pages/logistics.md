@@ -11,6 +11,8 @@ title: Logistics
 - **Meeting time:** Mondays and Wednesdays, 1:30–2:50 p.m.
 - **Location:** Packard 101
 - **Contact:** [cs329z-staff@lists.stanford.edu](mailto:cs329z-staff@lists.stanford.edu)
+- **Discussion forum:** [Ed Discussion](https://edstem.org/us/courses/106723/discussion) <span class="info-tip" tabindex="0" role="img" aria-label="Accessible only to enrolled students" data-tip="Accessible only to enrolled students">i</span>
+- **Canvas:** [canvas.stanford.edu/courses/233286](https://canvas.stanford.edu/courses/233286) <span class="info-tip" tabindex="0" role="img" aria-label="Accessible only to enrolled students" data-tip="Accessible only to enrolled students">i</span>
 
 ### Office Hours
 

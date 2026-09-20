@@ -145,3 +145,26 @@ h3 { font-size: 16px; font-weight: bold; }
 /* Holiday / no-class rows in the schedule */
 .table tbody tr.holiday td { color: #999; }
 .table tbody tr.holiday .lec-title { font-weight: 400; font-style: italic; }
+
+/* Info icon with hover/focus tooltip (used in Logistics for enrolled-only links) */
+.info-tip {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  vertical-align: 1px; margin-left: 2px; width: 14px; height: 14px; border-radius: 50%;
+  font-size: 10px; line-height: 1; font-weight: 700; font-style: normal;
+  color: #fff; background-color: #8c1515; cursor: help; outline: none;
+}
+.info-tip::after {
+  content: attr(data-tip);
+  position: absolute; left: 50%; bottom: calc(100% + 7px); transform: translateX(-50%);
+  white-space: nowrap; padding: 5px 9px; border-radius: 4px;
+  font: 400 12px/1.3 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-style: normal; color: #fff; background-color: #2e2d29;
+  opacity: 0; visibility: hidden; transition: opacity .12s ease; pointer-events: none; z-index: 10;
+}
+.info-tip::before {
+  content: ""; position: absolute; left: 50%; bottom: calc(100% + 2px); transform: translateX(-50%);
+  border: 5px solid transparent; border-top-color: #2e2d29; border-bottom: 0;
+  opacity: 0; visibility: hidden; transition: opacity .12s ease; pointer-events: none;
+}
+.info-tip:hover::after, .info-tip:focus::after,
+.info-tip:hover::before, .info-tip:focus::before { opacity: 1; visibility: visible; }
