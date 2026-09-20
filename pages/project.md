@@ -34,6 +34,17 @@ The proposal, midway report, and final report must use the
 [ICLR submission format](https://www.overleaf.com/latex/templates/template-for-iclr-2025-conference-submission/gqzkdyycxtvt)
 and follow the ICLR requirements, except where we specify otherwise below. Page limits exclude references.
 
+### AI-Use Disclosure Statement
+
+Every stage of the project (proposal, midway report, and final report) must end with a short **AI-Use
+Disclosure Statement** describing how, if at all, you used generative AI tools in that stage of the work. Cover
+both the writing and the system: which tools you used and for what (e.g., brainstorming, drafting or editing
+text, writing or debugging code, generating or labeling data, analyzing results), and what you did yourself.
+A sentence or two is fine if your use was light; say so explicitly if you did not use any AI tools. This
+statement does not count toward the page limit and is not graded on its own, but a missing statement will
+cost points. Using AI tools on the project is expected; the disclosure is about transparency, consistent with
+the Honor Code & AI Tools policy under [Logistics](#logistics).
+
 ### Code Submission
 
 With the midpoint demo and the final report, you must also submit a link to a GitHub repository containing
@@ -66,6 +77,7 @@ on its own merits regardless of what you end up building. Suggested structure:
    problem, and how you would know if it works.
 4. **References:** Entries should appear alphabetically and give at least full author name(s), year of
    publication, title, and outlet if applicable (e.g., journal or proceedings name).
+5. **AI-Use Disclosure Statement:** See above.
 
 #### 2. Midpoint Demo & Midway Report (Week 7)
 
@@ -88,6 +100,7 @@ Progress sections. Required sections:
 4. **Summary of Progress:** What you have done, what you still need to do, and any obstacles or concerns
    that might prevent your project from coming to fruition.
 5. **References:** In the same format as for the proposal.
+6. **AI-Use Disclosure Statement:** See above.
 
 #### 3. Final Report & Final System Demo (Finals Week)
 
@@ -121,9 +134,10 @@ let a reader run the system and reproduce your results. The final submission is 
    outside of the class. Only in extreme cases, and after discussion with the team, would we consider giving
    separate grades to team members based on this statement.
 9. **References**
+10. **AI-Use Disclosure Statement:** See above. Place it after the Authorship Statement.
 
-The Safety & Ethical Considerations, Authorship Statement, and References sections are required but not
-separately scored; a missing section will cost points.
+The Safety & Ethical Considerations, Authorship Statement, References, and AI-Use Disclosure Statement
+sections are required but not separately scored; a missing section will cost points.
 
 **Reproducibility (5 points).** The remaining 5 points of the final submission are for reproducibility. We will
 follow your README and run your code on a simple instance, such as a single task or example from your
