@@ -94,8 +94,8 @@ Progress sections. Required sections:
 The final system demo is presented live on Demo Day during finals week. The final report is an 8-page paper in
 ICLR submission format, adhering to ICLR guidelines concerning references, layout, supplementary
 materials, and so forth. Submit it together with a link to your final GitHub repository, whose README must
-let a reader run the system and reproduce your results. The report is graded out of 20 points. Required
-components:
+let a reader run the system and reproduce your results. The final submission is graded out of 25 points:
+20 for the report itself and 5 for reproducibility (see below). Required components of the report:
 
 1. **Introduction** (2 points)
 2. **Related Work** (1 point)
@@ -125,7 +125,7 @@ components:
 The Safety & Ethical Considerations, Authorship Statement, and References sections are required but not
 separately scored; a missing section will cost points.
 
-**Reproducibility (5 points).** Separately from the paper, 5 points are awarded for reproducibility. We will
+**Reproducibility (5 points).** The remaining 5 points of the final submission are for reproducibility. We will
 follow your README and run your code on a simple instance, such as a single task or example from your
 evaluation, to check that the system runs and behaves as described in the paper. We will not rerun your full
 evaluation, so make sure the quick-start path in your README works out of the box.
