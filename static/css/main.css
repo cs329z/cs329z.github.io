@@ -37,6 +37,7 @@ p { text-align: justify; }
 h1 { font-size: 24px; font-weight: 300; text-align: center; }
 h2 { font-size: 21px; font-weight: bold; color: #8c1515; }
 h3 { font-size: 16px; font-weight: bold; }
+h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 
 #header { margin-top: 20px; margin-bottom: 1px; }
 
