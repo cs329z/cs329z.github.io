@@ -61,11 +61,11 @@
             {% if ns.new_theme %}<span class="theme-tag">{{ lec.theme }}</span>{% endif %}
             <span class="lec-title">{{ lec.title }}</span>
             {% if lec.description %}<span class="lec-desc">{{ lec.description }}</span>{% endif %}
+            {% if lec.slides %}
+            <span class="slides-link"><a href="{{ url_for('static', filename='slides/' + lec.slides) }}">Slides (PDF)</a></span>
+            {% endif %}
           </td>
           <td class="material">
-            {% if lec.slides %}
-            <p class="slides-link"><a href="{{ url_for('static', filename='slides/' + lec.slides) }}">Slides (PDF)</a></p>
-            {% endif %}
             {% if lec.readings %}
             <b>Readings</b>:
             <ul>
