@@ -7,6 +7,7 @@
         "title": "Introduction — What Are Agentic Systems?",
         "theme": "Foundations & Landscape",
         "description": "The spectrum from monolithic models to compound AI systems to agents; when compound systems win; the three engineering challenges (decomposition, data, evaluation); course logistics.",
+        "slides": "lecture01.pdf",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
         ],

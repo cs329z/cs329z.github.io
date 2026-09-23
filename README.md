@@ -14,6 +14,7 @@ Everything you'd normally change lives in plain data / markdown files:
 |---|---|
 | Instructors / CAs | `data/staff.json` |
 | Weekly lectures, themes, readings | `data/schedule.json` |
+| Lecture slides | drop the PDF in `static/slides/`, then add `"slides": "<filename>.pdf"` to that lecture in `data/schedule.json` |
 | Assignment & project deadlines | `data/deadlines.json` |
 | Weekly office hours | `data/oh.csv` |
 | Welcome blurb | `pages/welcome.md` |

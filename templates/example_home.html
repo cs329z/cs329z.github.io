@@ -63,6 +63,9 @@
             {% if lec.description %}<span class="lec-desc">{{ lec.description }}</span>{% endif %}
           </td>
           <td class="material">
+            {% if lec.slides %}
+            <p class="slides-link"><a href="{{ url_for('static', filename='slides/' + lec.slides) }}">Slides (PDF)</a></p>
+            {% endif %}
             {% if lec.readings %}
             <b>Readings</b>:
             <ul>

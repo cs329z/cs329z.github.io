@@ -91,6 +91,8 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 
 /* Additional-readings dropdown: bottom-left of the Course Material cell */
 .material { text-align: left; }
+.slides-link { margin: 0 0 6px; font-weight: 600; }
+.slides-link a::before { content: "\2193  "; }
 .more-readings { margin-top: 8px; text-align: left; }
 .more-readings > summary {
   cursor: pointer; display: inline-block;
