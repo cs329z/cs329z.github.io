@@ -16,32 +16,33 @@ and demonstrate understanding.
 
 ### Paper Video & Peer Reviews
 
-Each student records a **10-minute video** about a recent agent paper of their choosing (due Week 8), then
-watches and reviews **three** videos from other students (due after Thanksgiving).
-
-- **Video (7%).** 2% selection of a substantive recent paper and a solid explanation of it; 2% your own
-  critique or insight — what you agree/disagree with, limitations, or an interesting question it raises;
-  2% added value, e.g. reproduce a result, run a small experiment, compare with another method, demo an
-  implementation, or connect it to a real agent; 1% clear and engaging presentation.
-- **Peer reviews (3%).** 1% each for specific, thoughtful feedback that goes beyond "good presentation" —
-  identify one strength, one weakness or question, and one concrete suggestion.
+Each student records a **10-minute video** about a recent agent paper of their choosing (due Week 8).
+Students also complete four peer-review activities during the quarter: reviews of paper videos, midway
+demos, agent evaluations from HW2, and final system demos. Each activity involves reviewing two peers'
+work using the provided review forms.
 
 ### Grading
 
-- **Project [50%]**
+- **Project [40%]**
     - Proposal [5%]
     - Midway report [5%]
-    - Midpoint demo [7%]
-    - Final report [15%]
-    - Final system demo [18%]
-- **Homework [20%]**
-    - HW1: Build an Agentic Harness [10%]
-    - HW2: Evaluate an Agent [10%]
+    - Midpoint demo [5%]
+    - Final submission [15%]
+    - Final system demo [10%]
+- **Homework [15%]**
+    - HW1: Build an Agentic Harness [7.5%]
+    - HW2: Evaluate an Agent [7.5%]
 - **HW-based quizzes [15%]**
     - Quiz 1 (after HW1) [7.5%]
     - Quiz 2 (after HW2) [7.5%]
-- **Paper video & peer reviews [10%]**
-    - Paper video [7%]
-    - Peer reviews (3 × 1%) [3%]
-- **Participation [5%]**
-    - In-class discussion, project teamwork, and recitations
+- **Paper video [10%]**
+    - 10-minute paper video [10%]
+- **Peer Review [20%]**
+    - Peer review of paper videos [5%]
+        - Provide feedback on 2 paper videos using the provided review forms [2.5% each]
+    - Peer review of midway demos [5%]
+        - Provide feedback on 2 projects using the provided review forms [2.5% each]
+    - Peer review of agent evaluations (HW2) [5%]
+        - Provide feedback on 2 evaluations using the provided review forms [2.5% each]
+    - Peer review of final system demos [5%]
+        - Provide feedback on 2 projects using the provided review forms [2.5% each]

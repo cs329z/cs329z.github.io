@@ -7,6 +7,6 @@
   { "week": 7,  "deadline": "Midway Report Due",               "date": "Fri Nov 6",  "time": "11:59 p.m." },
   { "week": 8,  "deadline": "Paper Video Due (10 min)",        "date": "Fri Nov 13", "time": "11:59 p.m." },
   { "week": 9,  "deadline": "HW2 Due",                         "date": "Fri Nov 20", "time": "11:59 p.m." },
-  { "week": 11, "deadline": "Peer Reviews Due (3 videos)",     "date": "Mon Nov 30", "time": "11:59 p.m." },
+  { "week": 11, "deadline": "Paper Video Peer Reviews Due (2 videos)", "date": "Mon Nov 30", "time": "11:59 p.m." },
   { "week": "Finals", "deadline": "Final Report Due & Final System Demo", "date": "Dec 7–11", "time": "TBA" }
 ]
