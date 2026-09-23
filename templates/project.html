@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Project | Stanford CS329Z{% endblock %}
+{% block description %}Course project requirements for Stanford CS329Z: Engineering AI Agents.{% endblock %}
+{% block canonical %}https://cs329z.stanford.edu/project.html{% endblock %}
+
+{% block content %}
+{% include "_course_header.html" %}
+
+<div class="container sec" id="project">
+  {% if project.title %}<h2>{{ project.title }}</h2>{% endif %}
+  {{ project.html|safe }}
+</div>
+{% endblock %}

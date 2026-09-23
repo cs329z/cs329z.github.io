@@ -16,7 +16,7 @@ title: Logistics
 
 ### Office Hours
 
-- See the [weekly office hours schedule](office_hours.html) for times, locations, and staff availability.
+- See the [weekly office hours schedule](#office-hours) below for times, locations, and staff availability.
 
 ### Prerequisites
 

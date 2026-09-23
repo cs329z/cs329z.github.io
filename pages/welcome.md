@@ -14,3 +14,5 @@ Students first build core components (RAG, tool use, agent loops) from scratch, 
 frameworks like DSPy abstract these patterns. Through two fully applied homework assignments and a
 quarter-long project, students gain hands-on experience building, optimizing, and evaluating agentic
 systems.
+
+For more information about coursework, office hours, and logistics, please refer to the [Logistics](logistics.html) page.

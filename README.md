@@ -23,7 +23,8 @@ Everything you'd normally change lives in plain data / markdown files:
 | Look & feel | `static/css/main.css` |
 | Logos / headshots | `static/images/` (referenced by name from `data/staff.json`) |
 
-The page layout / ordering lives in `templates/index.html`; the shared shell
+The page layouts live in `templates/example_home.html`,
+`templates/logistics.html`, and `templates/project.html`; the shared shell
 (navbar, `<head>`) is `templates/base.html`.
 
 ## Develop
@@ -76,7 +77,7 @@ is ever deleted, the live site still deploys on its own.
 ```
 data/        JSON content (staff, schedule, deadlines)
 pages/       Markdown prose sections
-templates/   Jinja2 templates (base.html, index.html)
+templates/   Jinja2 templates for the shared shell and individual pages
 static/      CSS, self-hosted font, images
 server.py    Flask app + static-site generator
 ```

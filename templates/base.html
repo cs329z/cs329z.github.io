@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% block title %}Stanford CS329Z | Engineering AI Agents{% endblock %}</title>
-  <meta name="description" content="{% block description %}Official course website for Stanford CS329Z: Engineering AI Agents — schedule, deadlines, coursework, project, and logistics.{% endblock %}">
+  <meta name="description" content="{% block description %}Official course website for Stanford CS329Z: Engineering AI Agents — schedule, project, coursework, and logistics.{% endblock %}">
   <link rel="canonical" href="{% block canonical %}https://cs329z.stanford.edu/{% endblock %}">
   {% if staging %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta property="og:type" content="website">
@@ -32,11 +32,9 @@
     <div class="navbar-collapse" id="nav-menu">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ url_for('index') }}#schedule">Schedule</a></li>
-        <li><a href="{{ url_for('index') }}#deadlines">Deadlines</a></li>
-        <li><a href="{{ url_for('index') }}#coursework">Coursework</a></li>
-        <li><a href="{{ url_for('index') }}#project">Project</a></li>
-        <li><a href="{{ url_for('office_hours') }}">Office Hours</a></li>
-        <li><a href="{{ url_for('index') }}#logistics">Logistics</a></li>
+        <li><a href="{{ url_for('logistics') }}">Logistics</a></li>
+        <li><a href="{{ url_for('project') }}">Project</a></li>
+        <li><a href="https://edstem.org/us/courses/106723/discussion">Discussion</a></li>
       </ul>
     </div>
   </div>

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Logistics | Stanford CS329Z{% endblock %}
+{% block description %}Course policies, coursework, deadlines, and office hours for Stanford CS329Z: Engineering AI Agents.{% endblock %}
+{% block canonical %}https://cs329z.stanford.edu/logistics.html{% endblock %}
+
+{% block content %}
+{% include "_course_header.html" %}
+
+<div class="container sec sechighlight" id="logistics">
+  {% if logistics.title %}<h2>{{ logistics.title }}</h2>{% endif %}
+  {{ logistics.html|safe }}
+</div>
+
+<div class="container sec" id="coursework">
+  {% if coursework.title %}<h2>{{ coursework.title }}</h2>{% endif %}
+  {{ coursework.html|safe }}
+</div>
+
+<div class="container sec" id="office-hours">
+  <h2>Office Hours</h2>
+  <p>Office hours vary by week. All times are Pacific.</p>
+  <div id="office-hours-schedule">
+    <h3>Weekly Schedule</h3>
+    <table class="table office-hours-table">
+      <colgroup>
+        <col style="width:10%"><col style="width:15%"><col style="width:25%"><col style="width:25%"><col style="width:25%">
+      </colgroup>
+      <thead>
+        <tr class="active"><th>Week</th><th>Week of</th><th>Staff</th><th>Time</th><th>Location</th></tr>
+      </thead>
+      <tbody>
+        {% for week in office_hours %}
+          {% set week_index = loop.index %}
+          {% if week.sessions %}
+            {% for session in week.sessions %}
+            <tr class="{% if week_index is even %}alt{% endif %}">
+              <td>{{ week.week }}</td>
+              <td>{{ week.date or "—" }}</td>
+              <td><b>{{ session.name }}</b></td>
+              <td>{{ session.time }}</td>
+              <td>{{ session.location }}</td>
+            </tr>
+            {% endfor %}
+          {% else %}
+            <tr class="{% if week_index is even %}alt{% endif %}">
+              <td>{{ week.week }}</td>
+              <td>{{ week.date or "—" }}</td>
+              <td colspan="3"><i>No office hours</i></td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

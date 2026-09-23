@@ -1,18 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Header -->
-<div id="header" style="text-align:center">
-  <a href="https://nlp.stanford.edu/">
-    <img src="{{ url_for('static', filename='images/Stanford-NLP-stack.jpg') }}" class="logo-left" alt="Stanford NLP Group logo">
-  </a>
-  <a href="https://www.stanford.edu/">
-    <img src="{{ url_for('static', filename='images/stanfordlogo.jpg') }}" class="logo-right" alt="Stanford University logo">
-  </a>
-  <h1>CS 329Z: Engineering AI Agents</h1>
-  <h3>Stanford / Fall 2026</h3>
-  <div style="clear:both;"></div>
-</div>
+{% include "_course_header.html" %}
 
 <!-- Instructors -->
 <div class="container sec" id="staff">
@@ -37,14 +26,14 @@
   </div></div>
 </div>
 
-<!-- Welcome -->
-<div class="container sec sechighlight" id="welcome">
+<!-- Overview -->
+<div class="container sec sechighlight" id="overview">
   {% if welcome.title %}<h2>{{ welcome.title }}</h2>{% endif %}
   {{ welcome.html|safe }}
 </div>
 
 <!-- Schedule -->
-<div class="container sec" id="schedule" style="margin-top:-20px">
+<div class="container sec" id="schedule">
   <h2>Class Schedule</h2>
   <p>Note: the schedule is tentative and subject to change. Classes meet Mondays and Wednesdays, 1:30–2:50 p.m., in Packard 101. Lecture materials will be linked here as they are released.</p>
   <table class="table">
@@ -101,7 +90,7 @@
 </div>
 
 <!-- Deadlines -->
-<div class="container sec" id="deadlines" style="margin-top:-20px">
+<div class="container sec sechighlight" id="deadlines">
   <h2>Deadlines</h2>
   <p>All times are Pacific. Deadlines are subject to change; any changes will be announced in class and posted here.</p>
   <table class="table" style="max-width:640px">
@@ -117,23 +106,5 @@
       {% endfor %}
     </tbody>
   </table>
-</div>
-
-<!-- Coursework -->
-<div class="container sec sechighlight" id="coursework">
-  {% if coursework.title %}<h2>{{ coursework.title }}</h2>{% endif %}
-  {{ coursework.html|safe }}
-</div>
-
-<!-- Project -->
-<div class="container sec" id="project" style="margin-top:-20px">
-  {% if project.title %}<h2>{{ project.title }}</h2>{% endif %}
-  {{ project.html|safe }}
-</div>
-
-<!-- Logistics -->
-<div class="container sec sechighlight" id="logistics">
-  {% if logistics.title %}<h2>{{ logistics.title }}</h2>{% endif %}
-  {{ logistics.html|safe }}
 </div>
 {% endblock %}

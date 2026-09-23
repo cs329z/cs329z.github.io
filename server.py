@@ -17,7 +17,7 @@ import json
 import os
 import sys
 
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template, url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
 
@@ -122,14 +122,11 @@ def section(name):
 
 def render_index():
     return render_template(
-        "index.html",
+        "example_home.html",
         staff=load_json("staff.json"),
         schedule=load_json("schedule.json"),
         deadlines=load_json("deadlines.json"),
         welcome=section("welcome"),
-        coursework=section("coursework"),
-        project=section("project"),
-        logistics=section("logistics"),
     )
 
 
@@ -138,9 +135,25 @@ def index():
     return render_index()
 
 
+@app.route("/logistics.html")
+def logistics():
+    return render_template(
+        "logistics.html",
+        logistics=section("logistics"),
+        coursework=section("coursework"),
+        office_hours=load_office_hours(),
+    )
+
+
+@app.route("/project.html")
+def project():
+    return render_template("project.html", project=section("project"))
+
+
 @app.route("/office_hours.html")
 def office_hours():
-    return render_template("office_hours.html", office_hours=load_office_hours())
+    """Keep old bookmarks working after office hours moved under Logistics."""
+    return redirect(url_for("logistics") + "#office-hours")
 
 
 @app.errorhandler(404)
