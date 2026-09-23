@@ -16,6 +16,7 @@ import csv
 import json
 import os
 import sys
+from datetime import datetime, timedelta
 
 from flask import Flask, redirect, render_template, url_for
 from flask_flatpages import FlatPages
@@ -87,6 +88,7 @@ def load_office_hours():
         for row in rows:
             if not row:
                 continue
+            week_start = datetime.strptime(f"{row[1].strip()}/2026", "%m/%d/%Y").date()
             sessions = []
             for value in row[2:]:
                 value = value.strip()
@@ -94,16 +96,19 @@ def load_office_hours():
                     continue
                 short_name, time = value.split(":", 1)
                 person = staff[short_name.strip()]
+                day, clock_time = time.strip().split(maxsplit=1)
+                day_index = day_order[day.lower().rstrip(".")]
+                session_date = week_start + timedelta(
+                    days=(day_index - week_start.weekday()) % 7
+                )
                 sessions.append({
                     "name": person["name"],
-                    "time": time.strip(),
+                    "date": f"{session_date:%b} {session_date.day} ({session_date:%a})",
+                    "time": clock_time,
                     "location": person["location"],
+                    "day_index": day_index,
                 })
-            sessions.sort(
-                key=lambda session: day_order.get(
-                    session["time"].split(maxsplit=1)[0].lower().rstrip("."), 7
-                )
-            )
+            sessions.sort(key=lambda session: session["day_index"])
             weeks.append({
                 "week": row[0].strip(),
                 "date": row[1].strip() if len(row) > 1 else "",

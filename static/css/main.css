@@ -166,10 +166,9 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
   #deadlines td:nth-of-type(3):before { content: "Date"; }
   #deadlines td:nth-of-type(4):before { content: "Time"; }
   #office-hours-schedule td:nth-of-type(1):before { content: "Week"; }
-  #office-hours-schedule td:nth-of-type(2):before { content: "Week of"; }
-  #office-hours-schedule td:nth-of-type(3):before { content: "Staff"; }
-  #office-hours-schedule td:nth-of-type(4):before { content: "Time"; }
-  #office-hours-schedule td:nth-of-type(5):before { content: "Location"; }
+  #office-hours-schedule td:nth-of-type(2):before { content: "Staff"; }
+  #office-hours-schedule td:nth-of-type(3):before { content: "Date & Time"; }
+  #office-hours-schedule td:nth-of-type(4):before { content: "Location"; }
   #office-hours-schedule td[colspan] { padding-left: 8px; }
   #office-hours-schedule td[colspan]::before { display: none; }
 }

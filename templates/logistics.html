@@ -24,10 +24,10 @@
     <h3>Weekly Schedule</h3>
     <table class="table office-hours-table">
       <colgroup>
-        <col style="width:10%"><col style="width:15%"><col style="width:25%"><col style="width:25%"><col style="width:25%">
+        <col style="width:10%"><col style="width:25%"><col style="width:35%"><col style="width:30%">
       </colgroup>
       <thead>
-        <tr class="active"><th>Week</th><th>Week of</th><th>Staff</th><th>Time</th><th>Location</th></tr>
+        <tr class="active"><th>Week</th><th>Staff</th><th>Date &amp; Time</th><th>Location</th></tr>
       </thead>
       <tbody>
         {% for week in office_hours %}
@@ -36,16 +36,14 @@
             {% for session in week.sessions %}
             <tr class="{% if week_index is even %}alt{% endif %}">
               <td>{{ week.week }}</td>
-              <td>{{ week.date or "—" }}</td>
               <td><b>{{ session.name }}</b></td>
-              <td>{{ session.time }}</td>
+              <td>{{ session.date }}, {{ session.time }}</td>
               <td>{{ session.location }}</td>
             </tr>
             {% endfor %}
           {% else %}
             <tr class="{% if week_index is even %}alt{% endif %}">
               <td>{{ week.week }}</td>
-              <td>{{ week.date or "—" }}</td>
               <td colspan="3"><i>No office hours</i></td>
             </tr>
           {% endif %}
