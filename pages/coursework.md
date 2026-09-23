@@ -32,7 +32,7 @@ watches and reviews **three** videos from other students (due after Thanksgiving
     - Proposal [5%]
     - Midway report [5%]
     - Midpoint demo [7%]
-    - Final submission [15%]
+    - Final report [15%]
     - Final system demo [18%]
 - **Homework [20%]**
     - HW1: Build an Agentic Harness [10%]

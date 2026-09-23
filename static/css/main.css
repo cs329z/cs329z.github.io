@@ -10,6 +10,11 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
+  font-style: normal; font-weight: 600; font-display: swap;
+  src: url(../fonts/source-sans-pro-600.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
   font-style: normal; font-weight: 700; font-display: swap;
   src: url(../fonts/source-sans-pro-700.woff2) format('woff2');
 }
@@ -37,6 +42,7 @@ p { text-align: justify; }
 h1 { font-size: 24px; font-weight: 300; text-align: center; }
 h2 { font-size: 21px; font-weight: bold; color: #8c1515; }
 h3 { font-size: 16px; font-weight: bold; }
+h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 
 #header { margin-top: 20px; margin-bottom: 1px; }
 
@@ -57,7 +63,7 @@ h3 { font-size: 16px; font-weight: bold; }
 /* Offset anchor jumps so section headers clear the fixed navbar */
 .sec[id] { scroll-margin-top: 62px; }
 .sechighlight { background-color: #f7f6f1; }
-.bold { font-weight: bold; }
+.bold, strong, b { font-weight: 600; }   /* semibold: subtler than the 700 headings */
 .red { color: #b00020; }
 
 /* Prose lists (e.g. the grading breakdown): tighter nesting, muted sub-items */
