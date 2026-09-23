@@ -15,4 +15,4 @@ frameworks like DSPy abstract these patterns. Through two fully applied homework
 quarter-long project, students gain hands-on experience building, optimizing, and evaluating agentic
 systems.
 
-For more information about coursework, office hours, and logistics, please refer to the [Logistics](logistics.html) page.
+For more information about coursework, office hours, and logistics, please refer to the [Logistics](logistics.html) page. You can also view course dates on the [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=59a6e4ad6abfe74cf389924dd1a5f8a9c7358ee32c2c7db1fd49d6ce4d252de1@group.calendar.google.com&ctz=America/Los_Angeles).
