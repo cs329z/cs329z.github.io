@@ -12,6 +12,7 @@ Run locally:   uv run python server.py         (serves http://localhost:5001)
 Build static:  uv run python server.py build   (writes build/, deploy anywhere)
 Staging build: SITE_STAGING=1 uv run python server.py build
 """
+import csv
 import json
 import os
 import sys
@@ -46,6 +47,64 @@ def load_json(name):
         return json.load(f)
 
 
+def load_office_hours():
+    """Load weekly office hours from data/oh.csv."""
+    day_order = {
+        "mon": 0,
+        "monday": 0,
+        "tue": 1,
+        "tues": 1,
+        "tuesday": 1,
+        "wed": 2,
+        "wednesday": 2,
+        "thu": 3,
+        "thur": 3,
+        "thurs": 3,
+        "thursday": 3,
+        "fri": 4,
+        "friday": 4,
+        "sat": 5,
+        "saturday": 5,
+        "sun": 6,
+        "sunday": 6,
+    }
+    staff = {
+        "Diyi": {"name": "Diyi Yang", "location": "Gates 370"},
+        "Michael": {"name": "Michael Ryan", "location": "Gates 3B Lounge"},
+        "John": {"name": "John Yang", "location": "Gates 3B Lounge"},
+    }
+    weeks = []
+    with open(os.path.join("data", "oh.csv"), newline="") as f:
+        rows = csv.reader(f)
+        next(rows, None)
+        for row in rows:
+            if not row:
+                continue
+            sessions = []
+            for value in row[2:]:
+                value = value.strip()
+                if not value or value.lower() == "no office hour":
+                    continue
+                short_name, time = value.split(":", 1)
+                person = staff[short_name.strip()]
+                sessions.append({
+                    "name": person["name"],
+                    "time": time.strip(),
+                    "location": person["location"],
+                })
+            sessions.sort(
+                key=lambda session: day_order.get(
+                    session["time"].split(maxsplit=1)[0].lower().rstrip("."), 7
+                )
+            )
+            weeks.append({
+                "week": row[0].strip(),
+                "date": row[1].strip() if len(row) > 1 else "",
+                "sessions": sessions,
+            })
+    return weeks
+
+
 def section(name):
     """A prose section from pages/<name>.md: {title, html}."""
     page = pages.get(name)
@@ -70,6 +129,11 @@ def render_index():
 @app.route("/")
 def index():
     return render_index()
+
+
+@app.route("/office_hours.html")
+def office_hours():
+    return render_template("office_hours.html", office_hours=load_office_hours())
 
 
 @app.errorhandler(404)

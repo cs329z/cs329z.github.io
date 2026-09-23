@@ -16,7 +16,7 @@ title: Logistics
 
 ### Office Hours
 
-- TBA — posted here and in the course forum before the first week of class.
+- See the [weekly office hours schedule](office_hours.html) for times, locations, and staff availability.
 
 ### Prerequisites
 
