@@ -18,6 +18,7 @@ Everything you'd normally change lives in plain data / markdown files:
 | Assignment & project deadlines | `data/deadlines.json` |
 | Weekly office hours | `data/oh.csv` |
 | Welcome blurb | `pages/welcome.md` |
+| Temporary site-wide notice | `pages/announcement.md` (set `expires:` to auto-hide; delete the file to remove it) |
 | Assignments & grading | `pages/coursework.md` |
 | Project description | `pages/project.md` |
 | Logistics (info, office hours, prerequisites, honor code, accommodations) | `pages/logistics.md` |

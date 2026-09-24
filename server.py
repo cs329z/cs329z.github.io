@@ -16,6 +16,13 @@ import csv
 import json
 import os
 import sys
+from datetime import datetime, time, timedelta, timezone
+
+try:
+    from zoneinfo import ZoneInfo
+    COURSE_TZ = ZoneInfo("America/Los_Angeles")
+except Exception:                      # pragma: no cover - fallback if tzdata is missing
+    COURSE_TZ = timezone(timedelta(hours=-7))
 from datetime import datetime, timedelta
 
 from flask import Flask, redirect, render_template, url_for
@@ -50,8 +57,8 @@ def inject_globals():
     return {
         "staging": STAGING,
         "asset_version": asset_version(),
-        # Temporary enrollment notice; delete pages/announcement.md to remove it.
-        "announcement": section("announcement"),
+        # Temporary site-wide notice; delete pages/announcement.md to remove it.
+        "announcement": announcement(),
     }
 
 
@@ -128,6 +135,33 @@ def section(name):
     if not page:
         return {"title": "", "html": ""}
     return {"title": page.meta.get("title", ""), "html": page.html}
+
+
+def announcement():
+    """Temporary site-wide notice from pages/announcement.md.
+
+    An optional `expires:` date in that file keeps the notice up through the end
+    of that day, Pacific. Because the site is static, the cutoff is also emitted
+    into the page so the browser hides the notice on time without a rebuild.
+    """
+    page = pages.get("announcement")
+    if not page:
+        return {"html": "", "expires_at_ms": None}
+
+    expires = page.meta.get("expires")
+    if not expires:
+        return {"html": page.html, "expires_at_ms": None}
+
+    if isinstance(expires, datetime):
+        expires = expires.date()
+    elif isinstance(expires, str):
+        expires = datetime.strptime(expires.strip(), "%Y-%m-%d").date()
+
+    # Show through the end of the expiry day, i.e. hide at midnight the next day.
+    cutoff = datetime.combine(expires + timedelta(days=1), time.min, tzinfo=COURSE_TZ)
+    if datetime.now(tz=COURSE_TZ) >= cutoff:
+        return {"html": "", "expires_at_ms": None}      # already past: leave it out of the build
+    return {"html": page.html, "expires_at_ms": int(cutoff.timestamp() * 1000)}
 
 
 def render_index():

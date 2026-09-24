@@ -1,5 +1,7 @@
 ---
 title: Enrollment
+# Notice shows through the end of this day (Pacific), then hides itself.
+expires: 2026-10-02
 ---
 
 **On the waitlist and want to enroll?** Fill out the

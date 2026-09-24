@@ -12,10 +12,21 @@
 </div>
 
 {% if announcement.html %}
-<!-- Temporary enrollment notice. To remove it sitewide, delete pages/announcement.md. -->
-<div class="container">
+<!-- Temporary enrollment notice. To remove it sitewide, delete pages/announcement.md;
+     the `expires` date in that file hides it automatically on schedule. -->
+<div class="container" id="site-notice"{% if announcement.expires_at_ms %} data-expires-at="{{ announcement.expires_at_ms }}"{% endif %}>
   <section class="enrollment-notice" aria-label="Enrollment notice">
     {{ announcement.html|safe }}
   </section>
 </div>
+{% if announcement.expires_at_ms %}
+<script>
+  // The site is static, so hide the notice in the browser once its date passes,
+  // without waiting for the next deploy. Runs inline, so nothing flashes on screen.
+  (function () {
+    var el = document.getElementById('site-notice');
+    if (el && Date.now() >= Number(el.getAttribute('data-expires-at'))) el.remove();
+  })();
+</script>
+{% endif %}
 {% endif %}
