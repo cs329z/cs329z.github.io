@@ -47,7 +47,12 @@ def asset_version():
 
 @app.context_processor
 def inject_globals():
-    return {"staging": STAGING, "asset_version": asset_version()}
+    return {
+        "staging": STAGING,
+        "asset_version": asset_version(),
+        # Temporary enrollment notice; delete pages/announcement.md to remove it.
+        "announcement": section("announcement"),
+    }
 
 
 def load_json(name):

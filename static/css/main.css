@@ -46,6 +46,17 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 
 #header { margin-top: 20px; margin-bottom: 1px; }
 
+/* Temporary enrollment notice (pages/announcement.md) */
+.enrollment-notice {
+  background: #fff;
+  border: 2px solid #8c1515;
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin: 14px 0 4px;
+}
+.enrollment-notice p { margin: 0 0 8px; text-align: left; }
+.enrollment-notice p:last-child { margin-bottom: 0; }
+
 /* Logos & staff */
 .logo-left  { height: 60px; float: left;  margin-left: 50px; }
 .logo-right { height: 60px; float: right; margin-right: 50px; }

@@ -10,3 +10,12 @@
   <h3>Stanford / Fall 2026</h3>
   <div style="clear:both;"></div>
 </div>
+
+{% if announcement.html %}
+<!-- Temporary enrollment notice. To remove it sitewide, delete pages/announcement.md. -->
+<div class="container">
+  <section class="enrollment-notice" aria-label="Enrollment notice">
+    {{ announcement.html|safe }}
+  </section>
+</div>
+{% endif %}
