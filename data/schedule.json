@@ -26,6 +26,7 @@
         "title": "LLMs for Builders",
         "theme": "Foundations & Landscape",
         "description": "APIs & SDKs (litellm), structured I/O and constrained generation, decoding strategies and test-time compute, context engineering, model selection, and cost/latency tradeoffs.",
+        "slides": "lecture02.pdf",
         "readings": [
           {"text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"}
         ],
