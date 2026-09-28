@@ -4,5 +4,10 @@
     { "name": "Michael Ryan", "role": "Instructor", "url": "https://michryan.com/",             "photo": "mryan.jpg" },
     { "name": "John Yang",    "role": "Instructor", "url": "https://john-b-yang.github.io/",     "photo": "jyang.jpg" }
   ],
-  "cas": []
+  "tas": [
+    { "name": "Owen Queen",      "role": "TA", "url": "https://owencqueen.github.io/",                  "photo": "oqueen.jpg" },
+    { "name": "Anusheh Chaudry", "role": "TA", "url": "https://www.linkedin.com/in/anushehchaudry/",   "photo": "achaudry.jpg" },
+    { "name": "Shreyas Sharma",  "role": "TA", "url": "https://www.linkedin.com/in/shreyas-n-sharma/", "photo": "ssharma.jpg" },
+    { "name": "Houjun Liu",      "role": "TA", "url": "https://nlp.stanford.edu/~houjun/",             "photo": "hliu.jpg" }
+  ]
 }

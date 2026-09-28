@@ -166,7 +166,7 @@ def announcement():
 
 def render_index():
     return render_template(
-        "example_home.html",
+        "index.html",
         staff=load_json("staff.json"),
         schedule=load_json("schedule.json"),
         deadlines=load_json("deadlines.json"),
@@ -185,6 +185,7 @@ def logistics():
         "logistics.html",
         logistics=section("logistics"),
         coursework=section("coursework"),
+        ta_office_hours=load_json("ta_office_hours.json"),
         office_hours=load_office_hours(),
     )
 

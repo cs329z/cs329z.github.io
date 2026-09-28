@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Shreyas Sharma",
+    "day": "Monday",
+    "time": "4:30–5:30 p.m.",
+    "location": "CoDA Basement"
+  },
+  {
+    "name": "Anusheh Chaudry",
+    "day": "Tuesday",
+    "time": "1:30–2:30 p.m.",
+    "location": "CoDA Basement"
+  },
+  {
+    "name": "Houjun Liu",
+    "day": "Wednesday",
+    "time": "9:30–10:30 a.m.",
+    "location": "Durand 218"
+  },
+  {
+    "name": "Owen Queen",
+    "day": "Friday",
+    "time": "10:30–11:30 a.m.",
+    "location": "Packard 339"
+  }
+]

@@ -178,6 +178,10 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
   #deadlines td:nth-of-type(2):before { content: "Deadline"; }
   #deadlines td:nth-of-type(3):before { content: "Date"; }
   #deadlines td:nth-of-type(4):before { content: "Time"; }
+  #ta-office-hours-schedule td:nth-of-type(1):before { content: "Staff"; }
+  #ta-office-hours-schedule td:nth-of-type(2):before { content: "Day"; }
+  #ta-office-hours-schedule td:nth-of-type(3):before { content: "Time"; }
+  #ta-office-hours-schedule td:nth-of-type(4):before { content: "Location"; }
   #office-hours-schedule td:nth-of-type(1):before { content: "Week"; }
   #office-hours-schedule td:nth-of-type(2):before { content: "Staff"; }
   #office-hours-schedule td:nth-of-type(3):before { content: "Date & Time"; }

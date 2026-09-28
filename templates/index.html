@@ -3,7 +3,7 @@
 {% block content %}
 {% include "_course_header.html" %}
 
-<!-- Instructors -->
+<!-- Course staff -->
 <div class="container sec" id="staff">
   <div class="row"><div class="col-md-10">
     <h2>Instructors</h2>
@@ -11,15 +11,15 @@
     <div class="instructor">
       <a href="{{ person.url }}">
         <div class="instructorphoto"><img src="{{ url_for('static', filename='images/' + person.photo) }}" alt="{{ person.name }} headshot"></div>
-        <div>{{ person.name }}</div>
+        <div>{{ person.name }}, {{ person.role }}</div>
       </a>
     </div>
     {% endfor %}
-    {% for person in staff.cas %}
+    {% for person in staff.tas %}
     <div class="instructor">
       <a href="{{ person.url }}">
         <div class="instructorphoto"><img src="{{ url_for('static', filename='images/' + person.photo) }}" alt="{{ person.name }} headshot"></div>
-        <div>{{ person.name }}</div>
+        <div>{{ person.name }}, {{ person.role }}</div>
       </a>
     </div>
     {% endfor %}
