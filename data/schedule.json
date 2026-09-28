@@ -25,7 +25,7 @@
         "date": "Mon Sep 28",
         "title": "LLMs for Builders",
         "theme": "Foundations & Landscape",
-        "description": "APIs & SDKs (litellm), structured I/O and constrained generation, decoding strategies and test-time compute, context engineering, model selection, and cost/latency tradeoffs.",
+        "description": "Language model internals for agent builders: decoding strategies, transformer attention (including linear and hybrid) and context length, the pretraining-to-post-training pipeline, inference and test-time scaling, structured I/O and constrained decoding, and context engineering.",
         "slides": "lecture02.pdf",
         "readings": [
           {"text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"}
