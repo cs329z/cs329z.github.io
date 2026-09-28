@@ -12,3 +12,5 @@ expires: 2026-10-02
 
 Both forms are accessible only from your Stanford email account, and auditing is limited to Stanford
 students. All course materials on this site are publicly available.
+
+**We will process the waitlist form and stop accepting submissions on 12PM Pacific Time, Monday, September 28th.**
