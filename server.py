@@ -12,7 +12,6 @@ Run locally:   uv run python server.py         (serves http://localhost:5001)
 Build static:  uv run python server.py build   (writes build/, deploy anywhere)
 Staging build: SITE_STAGING=1 uv run python server.py build
 """
-import csv
 import json
 import os
 import sys
@@ -23,8 +22,6 @@ try:
     COURSE_TZ = ZoneInfo("America/Los_Angeles")
 except Exception:                      # pragma: no cover - fallback if tzdata is missing
     COURSE_TZ = timezone(timedelta(hours=-7))
-from datetime import datetime, timedelta
-
 from flask import Flask, redirect, render_template, url_for
 from flask_flatpages import FlatPages
 from flask_frozen import Freezer
@@ -65,68 +62,6 @@ def inject_globals():
 def load_json(name):
     with open(os.path.join("data", name)) as f:
         return json.load(f)
-
-
-def load_office_hours():
-    """Load weekly office hours from data/oh.csv."""
-    day_order = {
-        "mon": 0,
-        "monday": 0,
-        "tue": 1,
-        "tues": 1,
-        "tuesday": 1,
-        "wed": 2,
-        "wednesday": 2,
-        "thu": 3,
-        "thur": 3,
-        "thurs": 3,
-        "thursday": 3,
-        "fri": 4,
-        "friday": 4,
-        "sat": 5,
-        "saturday": 5,
-        "sun": 6,
-        "sunday": 6,
-    }
-    staff = {
-        "Diyi": {"name": "Diyi Yang", "location": "Gates 370"},
-        "Michael": {"name": "Michael Ryan", "location": "Gates 3B Lounge"},
-        "John": {"name": "John Yang", "location": "Gates 3B Lounge"},
-    }
-    weeks = []
-    with open(os.path.join("data", "oh.csv"), newline="") as f:
-        rows = csv.reader(f)
-        next(rows, None)
-        for row in rows:
-            if not row:
-                continue
-            week_start = datetime.strptime(f"{row[1].strip()}/2026", "%m/%d/%Y").date()
-            sessions = []
-            for value in row[2:]:
-                value = value.strip()
-                if not value or value.lower() == "no office hour":
-                    continue
-                short_name, time = value.split(":", 1)
-                person = staff[short_name.strip()]
-                day, clock_time = time.strip().split(maxsplit=1)
-                day_index = day_order[day.lower().rstrip(".")]
-                session_date = week_start + timedelta(
-                    days=(day_index - week_start.weekday()) % 7
-                )
-                sessions.append({
-                    "name": person["name"],
-                    "date": f"{session_date:%b} {session_date.day} ({session_date:%a})",
-                    "time": clock_time,
-                    "location": person["location"],
-                    "day_index": day_index,
-                })
-            sessions.sort(key=lambda session: session["day_index"])
-            weeks.append({
-                "week": row[0].strip(),
-                "date": row[1].strip() if len(row) > 1 else "",
-                "sessions": sessions,
-            })
-    return weeks
 
 
 def section(name):
@@ -185,8 +120,6 @@ def logistics():
         "logistics.html",
         logistics=section("logistics"),
         coursework=section("coursework"),
-        ta_office_hours=load_json("ta_office_hours.json"),
-        office_hours=load_office_hours(),
     )
 
 

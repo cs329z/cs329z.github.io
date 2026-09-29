@@ -19,58 +19,17 @@
 
 <div class="container sec" id="office-hours">
   <h2>Office Hours</h2>
-  <p>All times are Pacific. Teaching assistant office hours repeat weekly from September 28 through December 4, except during Thanksgiving week (November 23–27). Instructor office hours vary by week.</p>
-  <div id="ta-office-hours-schedule">
-    <h3>Teaching Assistant Office Hours</h3>
-    <table class="table office-hours-table">
-      <colgroup>
-        <col style="width:25%"><col style="width:20%"><col style="width:30%"><col style="width:25%">
-      </colgroup>
-      <thead>
-        <tr class="active"><th>Staff</th><th>Day</th><th>Time</th><th>Location</th></tr>
-      </thead>
-      <tbody>
-        {% for session in ta_office_hours %}
-        <tr class="{% if loop.index is even %}alt{% endif %}">
-          <td><b>{{ session.name }}</b></td>
-          <td>{{ session.day }}</td>
-          <td>{{ session.time }}</td>
-          <td>{{ session.location }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <p>See the calendar below for current times and whether each session is in person or virtual. All times are Pacific. Zoom links for virtual sessions are available on Ed.</p>
+  <p>To better accommodate remote students, we alternate which office hours are held virtually each week. Each week, three sessions are virtual and three are in person; the formats swap the following week. Students who are able to attend in person are encouraged to choose an in-person session.</p>
+  <div class="calendar-embed">
+    <iframe
+      title="CS329Z office hours calendar"
+      src="https://calendar.google.com/calendar/embed?src=59a6e4ad6abfe74cf389924dd1a5f8a9c7358ee32c2c7db1fd49d6ce4d252de1%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles&amp;mode=WEEK&amp;wkst=2&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0"
+      loading="lazy"
+      frameborder="0"
+      scrolling="no">
+    </iframe>
   </div>
-  <div id="office-hours-schedule">
-    <h3>Instructor Office Hours</h3>
-    <table class="table office-hours-table">
-      <colgroup>
-        <col style="width:10%"><col style="width:25%"><col style="width:35%"><col style="width:30%">
-      </colgroup>
-      <thead>
-        <tr class="active"><th>Week</th><th>Staff</th><th>Date &amp; Time</th><th>Location</th></tr>
-      </thead>
-      <tbody>
-        {% for week in office_hours %}
-          {% set week_index = loop.index %}
-          {% if week.sessions %}
-            {% for session in week.sessions %}
-            <tr class="{% if week_index is even %}alt{% endif %}">
-              <td>{{ week.week }}</td>
-              <td><b>{{ session.name }}</b></td>
-              <td>{{ session.date }}, {{ session.time }}</td>
-              <td>{{ session.location }}</td>
-            </tr>
-            {% endfor %}
-          {% else %}
-            <tr class="{% if week_index is even %}alt{% endif %}">
-              <td>{{ week.week }}</td>
-              <td colspan="3"><i>No office hours</i></td>
-            </tr>
-          {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+  <p class="calendar-fallback"><a href="https://calendar.google.com/calendar/u/0/embed?src=59a6e4ad6abfe74cf389924dd1a5f8a9c7358ee32c2c7db1fd49d6ce4d252de1%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">Open the office hours calendar in a new window</a>.</p>
 </div>
 {% endblock %}

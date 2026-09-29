@@ -14,10 +14,8 @@ Everything you'd normally change lives in plain data / markdown files:
 |---|---|
 | Instructors / TAs | `data/staff.json` |
 | Weekly lectures, themes, readings | `data/schedule.json` |
-| Lecture slides | drop the PDF in `static/slides/`, then add `"slides": "<filename>.pdf"` to that lecture in `data/schedule.json` |
+| Lecture slides | add a `"slides_url": "https://…"` link to the lecture in `data/schedule.json` |
 | Assignment & project deadlines | `data/deadlines.json` |
-| Weekly office hours | `data/oh.csv` |
-| Recurring TA office hours | `data/ta_office_hours.json` |
 | Welcome blurb | `pages/welcome.md` |
 | Temporary site-wide notice | `pages/announcement.md` (set `expires:` to auto-hide; delete the file to remove it) |
 | Assignments & grading | `pages/coursework.md` |
@@ -25,16 +23,6 @@ Everything you'd normally change lives in plain data / markdown files:
 | Logistics (info, office hours, prerequisites, honor code, accommodations) | `pages/logistics.md` |
 | Look & feel | `static/css/main.css` |
 | Logos / headshots | `static/images/` (referenced by name from `data/staff.json`) |
-
-### Syncing TA office hours to Google Calendar
-
-The Google Apps Script in `scripts/sync_ta_office_hours.gs` contains the same
-recurring TA schedule shown on the site. Paste it into a project at
-[script.google.com](https://script.google.com), run `previewTaOfficeHours` to
-review the events in the execution log, and then run `syncTaOfficeHours` to
-write them to the course calendar. On the first run, Google will ask you to
-authorize calendar access. Re-running the sync safely replaces only events
-previously created by this script.
 
 The page layouts live in `templates/index.html`,
 `templates/logistics.html`, and `templates/project.html`; the shared shell
