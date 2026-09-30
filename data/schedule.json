@@ -39,6 +39,7 @@
         "title": "Retrieval-Augmented Generation (RAG)",
         "theme": "Building Blocks",
         "description": "Grounding and hallucination, embeddings and vector stores, chunking strategies, hybrid search, cross-encoders and late interaction (ColBERT). Hands-on: build a RAG pipeline from scratch.",
+        "slides_url": "https://drive.google.com/file/d/1q6HIZHlfIKgV8GOXubSdz1EkDukOm7pE/view?usp=share_link",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
         ],
