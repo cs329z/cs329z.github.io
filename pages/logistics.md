@@ -33,7 +33,7 @@ collaborators you think alongside — asking them to explain a concept, debug yo
 design is fair game and encouraged. What isn't: soliciting finished answers or copying solutions,
 whether from a model, a classmate, or the web. Using AI tools to substantially complete an assignment
 is an Honor Code violation. HW-based quizzes are individual and closed-book. When in doubt, ask us; see
-Stanford's [Generative AI Policy Guidance](https://communitystandards.stanford.edu/policies-guidance/bca-guidance-recommendations#generative-ai-policy-guidance)
+Stanford's [Generative AI Policy Guidance](https://communitystandards.stanford.edu/generative-ai-policy-guidance)
 for the university-wide baseline.
 
 ### Lecture Recordings
