@@ -7,7 +7,7 @@
         "title": "Introduction — What Are Agentic Systems?",
         "theme": "Foundations & Landscape",
         "description": "The spectrum from monolithic models to compound AI systems to agents; when compound systems win; the three engineering challenges (decomposition, data, evaluation); course logistics.",
-        "slides_url": "https://drive.google.com/file/d/1Wlf723d9-LBuTp56QYppaZwozOAetTsC/view?usp=drive_link",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
         ],
@@ -26,7 +26,7 @@
         "title": "LLMs for Builders",
         "theme": "Foundations & Landscape",
         "description": "Language model internals for agent builders: decoding strategies, transformer attention (including linear and hybrid) and context length, the pretraining-to-post-training pipeline, inference and test-time scaling, structured I/O and constrained decoding, and context engineering.",
-        "slides_url": "https://drive.google.com/file/d/1kekt_p0n-_Q4Y2dKYEkH87NEx6mr8nRE/view?usp=drive_link",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
         "readings": [
           {"text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"}
         ],
@@ -39,7 +39,7 @@
         "title": "Retrieval-Augmented Generation (RAG)",
         "theme": "Building Blocks",
         "description": "Grounding and hallucination, embeddings and vector stores, chunking strategies, hybrid search, cross-encoders and late interaction (ColBERT). Hands-on: build a RAG pipeline from scratch.",
-        "slides_url": "https://drive.google.com/file/d/1q6HIZHlfIKgV8GOXubSdz1EkDukOm7pE/view?usp=share_link",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
         ],
