@@ -57,6 +57,7 @@
         "title": "Tool Use & Function Calling",
         "theme": "Building Blocks",
         "description": "The REPL, function-calling APIs, the Model Context Protocol (MCP), designing good tools, code-execution sandboxes, error handling and retries. Hands-on: build a tool-using system from scratch.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf",
         "readings": [
           {"text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
         ],
