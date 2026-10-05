@@ -33,7 +33,12 @@ collaborators you think alongside — asking them to explain a concept, debug yo
 design is fair game and encouraged. AI generated code is permitted for the project and on the homework
 assignments provided that students can validate and explain all code. This will be verified through
 oral examinations. AI may not be used to write the course project reports, however you are welcome to
-use AI for brainstorming and feedback on your writing. HW-based quizzes are individual and closed-book.
+use AI for brainstorming and feedback on your writing.
+
+Two things remain off limits. Copying answers from other students or from the web is not permitted.
+And using AI to substantially complete an assignment without actively understanding the work is an
+Honor Code violation: if you submit it, you are responsible for knowing how and why it works.
+HW-based quizzes are individual and closed-book.
 When in doubt, ask us; see
 Stanford's [Generative AI Policy Guidance](https://communitystandards.stanford.edu/generative-ai-policy-guidance)
 for the university-wide baseline.
