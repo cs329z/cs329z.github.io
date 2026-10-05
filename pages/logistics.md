@@ -31,7 +31,7 @@ assignments online. We sometimes use automated methods to detect overly similar 
 This is a course about building with AI, so we expect you to use it. Treat generative AI tools as
 collaborators you think alongside — asking them to explain a concept, debug your code, or critique a
 design is fair game and encouraged. AI generated code is permitted for the project and on the homework
-assignments provided that students can validate and explain all code. This will be verified through
+assignments provided that you can validate and explain all code. This will be verified through
 oral examinations. AI may not be used to write the course project reports, however you are welcome to
 use AI for brainstorming and feedback on your writing.
 
