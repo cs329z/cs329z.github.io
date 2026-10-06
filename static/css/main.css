@@ -77,6 +77,26 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 .bold, strong, b { font-weight: 600; }   /* semibold: subtler than the 700 headings */
 .red { color: #b00020; }
 
+/* Sponsors */
+.sponsors { padding-top: 24px; padding-bottom: 32px; text-align: left; }
+.sponsors h2 { margin-bottom: 10px; }
+.sponsors p { text-align: left; margin-bottom: 24px; }
+.sponsor-logos {
+  display: flex; align-items: center; justify-content: flex-start;
+  flex-wrap: wrap; gap: 32px 56px;
+}
+.sponsor-logos a {
+  display: flex; align-items: center; justify-content: center;
+  width: 230px; height: 90px; padding: 8px;
+}
+.sponsor-logos a:hover, .sponsor-logos a:focus {
+  opacity: .75; outline: 2px solid transparent; text-decoration: none;
+}
+.sponsor-logos a:focus-visible { outline-color: #8c1515; border-radius: 4px; }
+.sponsor-logo { display: block; max-width: 100%; max-height: 74px; width: auto; height: auto; }
+.sponsor-logo-laude { max-height: 90px; }
+.sponsor-logo-thinking-machines { max-width: 220px; }
+
 /* Prose lists (e.g. the grading breakdown): tighter nesting, muted sub-items */
 .sec > ul { padding-left: 20px; }
 .sec > ul > li { margin-bottom: 6px; }
@@ -187,6 +207,8 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
   #deadlines td:nth-of-type(3):before { content: "Date"; }
   #deadlines td:nth-of-type(4):before { content: "Time"; }
   .calendar-embed { height: 600px; }
+  .sponsor-logos { gap: 20px; }
+  .sponsor-logos a { width: 190px; height: 76px; }
 }
 
 /* Holiday / no-class rows in the schedule */
