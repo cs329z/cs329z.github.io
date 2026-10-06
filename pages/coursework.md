@@ -6,7 +6,7 @@ Two fully applied homework assignments build on the components covered in lectur
 followed by a **10-minute HW-based quiz** where students explain their design decisions and tradeoffs
 and demonstrate understanding.
 
-- **HW1: Build an Agentic Harness** (Weeks 3–6). Build a company's internal AI assistant from
+- **[HW1: Build an Agentic Harness](https://github.com/cs329z/assignment1-harness)** (Weeks 3–6). Build a company's internal AI assistant from
   scratch, with no agent frameworks: just a chat-completion call and code you write yourself. Start with
   LLM pipelines that retrieve and reason over a real corporate email archive, then grow them into a full
   agent harness with tools, a terminal, memory, and a human in the loop.

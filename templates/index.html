@@ -107,7 +107,7 @@
     </thead>
     <tbody>
       {% for d in deadlines %}
-      <tr><td>{{ d.week }}</td><td>{{ d.deadline }}</td><td>{{ d.date }}</td><td>{{ d.time }}</td></tr>
+      <tr><td>{{ d.week }}</td><td>{% if d.url %}<a href="{{ d.url }}">{{ d.deadline }}</a>{% else %}{{ d.deadline }}{% endif %}</td><td>{{ d.date }}</td><td>{{ d.time }}</td></tr>
       {% endfor %}
     </tbody>
   </table>

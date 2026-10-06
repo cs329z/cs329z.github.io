@@ -1,5 +1,5 @@
 [
-  { "week": 3,  "deadline": "HW1 Released",                    "date": "Mon Oct 5",  "time": "—" },
+  { "week": 3,  "deadline": "HW1 Released",                    "date": "Mon Oct 5",  "time": "—", "url": "https://github.com/cs329z/assignment1-harness" },
   { "week": 3,  "deadline": "Project Proposal Due",            "date": "Fri Oct 9",  "time": "11:59 p.m." },
   { "week": 6,  "deadline": "HW2 Released",                    "date": "Mon Oct 26", "time": "—" },
   { "week": 6,  "deadline": "HW1 Due",                         "date": "Fri Oct 30", "time": "11:59 p.m." },
