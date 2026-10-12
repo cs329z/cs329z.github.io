@@ -84,6 +84,7 @@
         "title": "Agent Design Patterns & Scaffolds",
         "theme": "Frameworks & Agent Design",
         "description": "The workflows-vs-agents taxonomy, five composable workflow patterns, agent patterns (ReAct, plan-and-execute, reflection), and scaffolds as design decisions.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf",
         "readings": [
           {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"}
         ],
