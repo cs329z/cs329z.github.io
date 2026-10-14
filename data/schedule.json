@@ -95,6 +95,7 @@
         "title": "Agent Memory Architectures",
         "theme": "Memory & Multi-Agent Systems",
         "description": "Short- vs. long-term memory, memory as tool-based actions, the file system as externalized memory, structured memory paradigms, and cross-agent memory.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
         "readings": [
           {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"}
         ],
