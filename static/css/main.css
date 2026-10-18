@@ -127,6 +127,7 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 /* Lecture title + description in the Theme column */
 .lec-title { display: block; font-weight: 700; }
 .lec-desc  { display: block; font-weight: 300; margin-top: 2px; }
+.lec-speakers { display: block; font-weight: 600; margin-top: 2px; }
 
 /* Additional-readings dropdown: bottom-left of the Course Material cell */
 .material { text-align: left; }

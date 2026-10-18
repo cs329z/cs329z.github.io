@@ -145,8 +145,12 @@
     "lectures": [
       {
         "date": "Mon Oct 26",
-        "title": "📺 Guest Lecture (TBA)",
-        "description": "",
+        "title": "📺 Guest Lecture: Terminal-Bench",
+        "speakers": [
+          {"name": "Ryan Marten", "url": "https://ryanmarten.com"},
+          {"name": "Alex Shaw", "url": "https://www.alexgshaw.com"}
+        ],
+        "description": "Ryan Marten and Alex Shaw (Laude Institute), co-creators of Terminal-Bench, on benchmarking how well AI agents accomplish real-world tasks in a terminal environment.",
         "readings": [],
         "additional": []
       },
