@@ -6,7 +6,7 @@
         "date": "Wed Sep 23",
         "title": "Introduction — What Are Agentic Systems?",
         "theme": "Foundations & Landscape",
-        "description": "The spectrum from monolithic models to compound AI systems to agents; when compound systems win; the three engineering challenges (decomposition, data, evaluation); course logistics.",
+        "description": "A brief history of agents; the anatomy of an agent (LLM core, reasoning, memory, tools, environment); compound AI systems and workflows vs. agents; key challenges in reliability, training, safety, and evaluation; course logistics.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
@@ -38,7 +38,7 @@
         "date": "Wed Sep 30",
         "title": "Retrieval-Augmented Generation (RAG)",
         "theme": "Building Blocks",
-        "description": "Grounding and hallucination, embeddings and vector stores, chunking strategies, hybrid search, cross-encoders and late interaction (ColBERT). Hands-on: build a RAG pipeline from scratch.",
+        "description": "Why retrieval; indexing (chunking, contextual retrieval, RAPTOR, HNSW); retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT; agentic RAG (Self-RAG, Search-R1); RAG failure modes. Plus a course project overview.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
@@ -56,7 +56,7 @@
         "date": "Mon Oct 5",
         "title": "Tool Use & Function Calling",
         "theme": "Building Blocks",
-        "description": "The REPL, function-calling APIs, the Model Context Protocol (MCP), designing good tools, code-execution sandboxes, error handling and retries. Hands-on: build a tool-using system from scratch.",
+        "description": "Why LLMs need tools; learning to call tools (Toolformer) and scaling to thousands of APIs (Gorilla, ToolLLM); standard interfaces from REST to function calling to MCP; evaluating tool use (BFCL, ToolBench, τ-bench); failure modes.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf",
         "readings": [
           {"text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
@@ -67,7 +67,7 @@
         "date": "Wed Oct 7",
         "title": "Frameworks & Orchestration",
         "theme": "Frameworks & Agent Design",
-        "description": "DSPy (signatures, modules, optimizers), LangChain/LangGraph, LlamaIndex; what frameworks abstract vs. what you built from scratch; choosing the right level of abstraction.",
+        "description": "The data/system/evals pillars; live demos of DSPy (signatures, modules, optimizers) and LangGraph (state, nodes, edges); open-source agent harnesses (mini-SWE-agent, OpenHands, Pi); durable orchestration with Temporal and observability tooling; best practices.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf",
         "readings": [
           {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"}
@@ -83,7 +83,7 @@
         "date": "Mon Oct 12",
         "title": "Agent Design Patterns & Scaffolds",
         "theme": "Frameworks & Agent Design",
-        "description": "The workflows-vs-agents taxonomy, five composable workflow patterns, agent patterns (ReAct, plan-and-execute, reflection), and scaffolds as design decisions.",
+        "description": "Workflows vs. agents; five composable workflow patterns; reasoning and acting patterns (ReAct, Reflexion, CodeAct, ReWOO); context-management patterns (event logs, compaction, observation masking, context isolation); case study of the Pi harness.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf",
         "readings": [
           {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"}
@@ -94,7 +94,7 @@
         "date": "Wed Oct 14",
         "title": "Agent Memory Architectures",
         "theme": "Memory & Multi-Agent Systems",
-        "description": "Short- vs. long-term memory, memory as tool-based actions, the file system as externalized memory, structured memory paradigms, and cross-agent memory.",
+        "description": "Why agents need memory; working, episodic, semantic, and procedural memory; four architecture patterns (skill libraries, tiered hierarchies like MemGPT, reflective consolidation, memory maintenance); memory benchmarks; open problems in forgetting, privacy, and over-personalization.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
         "readings": [
           {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"}
@@ -114,7 +114,7 @@
         "date": "Mon Oct 19",
         "title": "Multi-Agent Systems",
         "theme": "Memory & Multi-Agent Systems",
-        "description": "Single vs. multi-agent architectures, orchestration patterns, handoffs and state transfer, delegation and collaboration patterns, and the challenges of coordination and error propagation.",
+        "description": "When to use single vs. multi-agent systems; orchestration patterns (orchestrator, swarm, hybrid); communication via handoffs, message boards, and the A2A protocol; coordination infrastructure (task ledgers, shared memory, worktree isolation); why multi-agent systems fail.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf",
         "readings": [
           {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"}
