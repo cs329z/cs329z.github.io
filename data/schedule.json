@@ -115,6 +115,7 @@
         "title": "Multi-Agent Systems",
         "theme": "Memory & Multi-Agent Systems",
         "description": "Single vs. multi-agent architectures, orchestration patterns, handoffs and state transfer, delegation and collaboration patterns, and the challenges of coordination and error propagation.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf",
         "readings": [
           {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"}
         ],
