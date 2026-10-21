@@ -130,6 +130,7 @@
         "title": "Optimization",
         "theme": "Optimization",
         "description": "The landscape from prompts to fine-tuning; prompt optimization (GEPA, MIPROv2, OPRO, TextGrad); test-time compute scaling; LoRA/QLoRA; distillation; RLHF/DPO at a high level; and when to optimize prompts vs. weights vs. inference compute.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
         "readings": [
           {"text": "Snell et al. \"Scaling LLM Test-Time Compute Optimally…\" ICLR (2025).", "url": "https://arxiv.org/abs/2408.03314"},
           {"text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform RL.\" arXiv (2026).", "url": "https://arxiv.org/abs/2507.19457"}
