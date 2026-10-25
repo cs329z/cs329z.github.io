@@ -6,7 +6,7 @@
         "date": "Wed Sep 23",
         "title": "Introduction — What Are Agentic Systems?",
         "theme": "Foundations & Landscape",
-        "description": "A brief history of agents; the anatomy of an agent (LLM core, reasoning, memory, tools, environment); compound AI systems and workflows vs. agents; key challenges in reliability, training, safety, and evaluation; course logistics.",
+        "description": "Course logistics, a brief history of agents, and the anatomy of an agent: LLM core, reasoning, memory, tools, and environment. Compound AI systems and workflows vs. agents, plus the key challenges of reliability, training, safety, and evaluation.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
@@ -38,7 +38,7 @@
         "date": "Wed Sep 30",
         "title": "Retrieval-Augmented Generation (RAG)",
         "theme": "Building Blocks",
-        "description": "Why retrieval; indexing (chunking, contextual retrieval, RAPTOR, HNSW); retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT; agentic RAG (Self-RAG, Search-R1); RAG failure modes. Plus a course project overview.",
+        "description": "Why retrieval helps, then the RAG pipeline end to end: indexing (chunking, contextual retrieval, RAPTOR, HNSW), retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT, agentic RAG (Self-RAG, Search-R1), and common failure modes. Plus a course project overview.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
@@ -56,7 +56,7 @@
         "date": "Mon Oct 5",
         "title": "Tool Use & Function Calling",
         "theme": "Building Blocks",
-        "description": "Why LLMs need tools; learning to call tools (Toolformer) and scaling to thousands of APIs (Gorilla, ToolLLM); standard interfaces from REST to function calling to MCP; evaluating tool use (BFCL, ToolBench, τ-bench); failure modes.",
+        "description": "Why LLMs need tools and how they learn to use them: Toolformer, scaling to thousands of APIs with Gorilla and ToolLLM, standard interfaces from REST to function calling to MCP, evaluating tool use with BFCL, ToolBench, and τ-bench, and common failure modes.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf",
         "readings": [
           {"text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
@@ -67,7 +67,7 @@
         "date": "Wed Oct 7",
         "title": "Frameworks & Orchestration",
         "theme": "Frameworks & Agent Design",
-        "description": "The data/system/evals pillars; live demos of DSPy (signatures, modules, optimizers) and LangGraph (state, nodes, edges); open-source agent harnesses (mini-SWE-agent, OpenHands, Pi); durable orchestration with Temporal and observability tooling; best practices.",
+        "description": "The data, system, and evals pillars of agent engineering, with live demos of DSPy (signatures, modules, optimizers) and LangGraph (state, nodes, edges). A tour of open-source agent harnesses (mini-SWE-agent, OpenHands, Pi), durable orchestration with Temporal, observability tooling, and best practices.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf",
         "readings": [
           {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"}
@@ -83,7 +83,7 @@
         "date": "Mon Oct 12",
         "title": "Agent Design Patterns & Scaffolds",
         "theme": "Frameworks & Agent Design",
-        "description": "Workflows vs. agents; five composable workflow patterns; reasoning and acting patterns (ReAct, Reflexion, CodeAct, ReWOO); context-management patterns (event logs, compaction, observation masking, context isolation); case study of the Pi harness.",
+        "description": "Workflows vs. agents and the design patterns for each: five composable workflow patterns, reasoning and acting patterns (ReAct, Reflexion, CodeAct, ReWOO), and context-management patterns (event logs, compaction, observation masking, context isolation). Case study of the Pi harness.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf",
         "readings": [
           {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"}
@@ -94,7 +94,7 @@
         "date": "Wed Oct 14",
         "title": "Agent Memory Architectures",
         "theme": "Memory & Multi-Agent Systems",
-        "description": "Why agents need memory; working, episodic, semantic, and procedural memory; four architecture patterns (skill libraries, tiered hierarchies like MemGPT, reflective consolidation, memory maintenance); memory benchmarks; open problems in forgetting, privacy, and over-personalization.",
+        "description": "Why agents need memory and the four types (working, episodic, semantic, procedural). Four architecture patterns: skill libraries, tiered hierarchies like MemGPT, reflective consolidation, and memory maintenance. Memory benchmarks and open problems in forgetting, privacy, and over-personalization.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
         "readings": [
           {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"}
@@ -114,7 +114,7 @@
         "date": "Mon Oct 19",
         "title": "Multi-Agent Systems",
         "theme": "Memory & Multi-Agent Systems",
-        "description": "When to use single vs. multi-agent systems; orchestration patterns (orchestrator, swarm, hybrid); communication via handoffs, message boards, and the A2A protocol; coordination infrastructure (task ledgers, shared memory, worktree isolation); why multi-agent systems fail.",
+        "description": "When to use single vs. multi-agent systems and how to build them: orchestration patterns (orchestrator, swarm, hybrid), communication through handoffs, message boards, and the A2A protocol, and coordination infrastructure (task ledgers, shared memory, worktree isolation). Why multi-agent systems fail.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf",
         "readings": [
           {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"}
@@ -129,7 +129,7 @@
         "date": "Wed Oct 21",
         "title": "Optimization",
         "theme": "Optimization",
-        "description": "The landscape from prompts to fine-tuning; prompt optimization (GEPA, MIPROv2, OPRO, TextGrad); test-time compute scaling; LoRA/QLoRA; distillation; RLHF/DPO at a high level; and when to optimize prompts vs. weights vs. inference compute.",
+        "description": "When optimization pays off and how to do it: context optimization (bootstrapped few-shot, MIPROv2, OPRO, TextGrad, GEPA), weight optimization (SFT on agent rollouts, RL with PPO and GRPO, on-policy distillation), agents as optimizers (Darwin Gödel Machine, autoresearch), and when to optimize prompts vs. weights.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
         "readings": [
           {"text": "Snell et al. \"Scaling LLM Test-Time Compute Optimally…\" ICLR (2025).", "url": "https://arxiv.org/abs/2408.03314"},
@@ -163,7 +163,7 @@
         "date": "Wed Oct 28",
         "title": "What Data Do Agents Need?",
         "theme": "Data for Agentic Systems",
-        "description": "Traces, demonstrations, and feedback; data for optimization vs. evaluation; data flywheels; synthetic data generation; collecting data from human-agent interaction.",
+        "description": "Traces, demonstrations, and feedback, data for optimization vs. evaluation, data flywheels, synthetic data generation, and collecting data from human-agent interaction.",
         "readings": [
           {"text": "Shankar. \"Data Flywheels for LLM Applications.\" (2024).", "url": "https://www.sh-reya.com/blog/ai-engineering-flywheel/"}
         ],
@@ -253,7 +253,7 @@
         "date": "Wed Nov 18",
         "title": "Coding & Software Agents",
         "theme": "Coding Agents & Proactive Agents",
-        "description": "How coding agents work end-to-end; SWE-agent, Claude Code, and OpenHands architectures; scaffolds as design decisions; SWE-bench and the 4-tuple framework in practice; the future of software development with agents.",
+        "description": "How coding agents work end to end: the SWE-agent, Claude Code, and OpenHands architectures, scaffolds as design decisions, SWE-bench and the 4-tuple framework in practice, and the future of software development with agents.",
         "readings": [
           {"text": "Yang et al. \"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2405.15793"},
           {"text": "Wang et al. \"OpenHands: An Open Platform for AI Software Developers.\" ICLR (2025).", "url": "https://arxiv.org/abs/2407.16741"}
@@ -292,7 +292,7 @@
         "date": "Mon Nov 30",
         "title": "Proactive Agents",
         "theme": "Coding Agents & Proactive Agents",
-        "description": "From reactive to proactive; General User Models (GUM); Next Action Prediction; open-source proactive personal agents; privacy and trust implications; and when agents should initiate vs. wait (mixed initiative).",
+        "description": "From reactive to proactive agents: General User Models (GUM), Next Action Prediction, open-source proactive personal agents, privacy and trust implications, and when agents should initiate vs. wait (mixed initiative).",
         "readings": [
           {"text": "Shaikh et al. \"Creating General User Models from Computer Use.\" UIST (2025).", "url": "https://arxiv.org/abs/2505.10831"}
         ],
@@ -321,7 +321,7 @@
         "date": "Finals Week (Dec 7–11)",
         "title": "Final Project Demo Day",
         "theme": "Open Problems & Final Demos",
-        "description": "Held during the end-quarter examination period; exact time and location TBA.",
+        "description": "Held during the end-quarter examination period. Exact time and location TBA.",
         "readings": [],
         "additional": []
       }
