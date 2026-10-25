@@ -9,12 +9,11 @@
         "description": "Course logistics, a brief history of agents, and the anatomy of an agent: LLM core, reasoning, memory, tools, and environment. Compound AI systems and workflows vs. agents, plus the key challenges of reliability, training, safety, and evaluation.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
         "readings": [
-          {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"}
+          {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"},
+          {"text": "Weng. \"LLM Powered Autonomous Agents.\" Lil'Log (2023).", "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"},
+          {"text": "Kapoor et al. \"AI Agents That Matter.\" TMLR (2025).", "url": "https://arxiv.org/abs/2407.01502"}
         ],
-        "additional": [
-          {"text": "Ng. \"Agentic Design Patterns Part 1: Four AI Agent Strategies…\" The Batch (2024).", "url": "https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/"},
-          {"text": "Si et al. \"Towards Execution-Grounded Automated AI Research.\" arXiv (2026).", "url": "https://arxiv.org/abs/2601.14525"}
-        ]
+        "additional": []
       }
     ]
   },
@@ -28,11 +27,11 @@
         "description": "Language model internals for agent builders: decoding strategies, transformer attention (including linear and hybrid) and context length, the pretraining-to-post-training pipeline, inference and test-time scaling, structured I/O and constrained decoding, and context engineering.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
         "readings": [
-          {"text": "Schluntz & Zhang. \"Building Effective Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"}
-        ],
-        "additional": [
+          {"text": "Vaswani et al. \"Attention Is All You Need.\" NeurIPS (2017).", "url": "https://arxiv.org/abs/1706.03762"},
+          {"text": "Katharopoulos et al. \"Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention.\" ICML (2020).", "url": "https://arxiv.org/abs/2006.16236"},
           {"text": "Rajasekaran et al. \"Effective Context Engineering for AI Agents.\" Anthropic (2025).", "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"}
-        ]
+        ],
+        "additional": []
       },
       {
         "date": "Wed Sep 30",
@@ -41,11 +40,11 @@
         "description": "Why retrieval helps, then the RAG pipeline end to end: indexing (chunking, contextual retrieval, RAPTOR, HNSW), retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT, agentic RAG (Self-RAG, Search-R1), and common failure modes. Plus a course project overview.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
         "readings": [
-          {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"}
+          {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"},
+          {"text": "Karpukhin et al. \"Dense Passage Retrieval for Open-Domain Question Answering.\" EMNLP (2020).", "url": "https://arxiv.org/abs/2004.04906"},
+          {"text": "Khattab & Zaharia. \"ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT.\" SIGIR (2020).", "url": "https://arxiv.org/abs/2004.12832"}
         ],
-        "additional": [
-          {"text": "Khattab & Zaharia. \"ColBERT: Efficient and Effective Passage Search via Late Interaction over BERT.\" SIGIR (2020).", "url": "https://arxiv.org/abs/2004.12832"}
-        ]
+        "additional": []
       }
     ]
   },
@@ -59,7 +58,9 @@
         "description": "Why LLMs need tools and how they learn to use them: Toolformer, scaling to thousands of APIs with Gorilla and ToolLLM, standard interfaces from REST to function calling to MCP, evaluating tool use with BFCL, ToolBench, and τ-bench, and common failure modes.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf",
         "readings": [
-          {"text": "Model Context Protocol Specification. The Linux Foundation (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
+          {"text": "Schick et al. \"Toolformer: Language Models Can Teach Themselves to Use Tools.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2302.04761"},
+          {"text": "Patil et al. \"Gorilla: Large Language Model Connected with Massive APIs.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2305.15334"},
+          {"text": "Model Context Protocol Specification, revision 2025-06-18. modelcontextprotocol.io (2025).", "url": "https://modelcontextprotocol.io/specification/2025-06-18"}
         ],
         "additional": []
       },
@@ -70,7 +71,9 @@
         "description": "The data, system, and evals pillars of agent engineering, with live demos of DSPy (signatures, modules, optimizers) and LangGraph (state, nodes, edges). A tour of open-source agent harnesses (mini-SWE-agent, OpenHands, Pi), durable orchestration with Temporal, observability tooling, and best practices.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf",
         "readings": [
-          {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"}
+          {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"},
+          {"text": "LangChain. \"LangGraph Overview.\" LangChain Docs.", "url": "https://docs.langchain.com/oss/python/langgraph/overview"},
+          {"text": "Arena.ai. \"HarnessTax: How Much Does the Harness Matter for Coding Agents?\" Arena Blog (2026).", "url": "https://arena.ai/blog/coding-agents-harness-tax"}
         ],
         "additional": []
       }
@@ -86,9 +89,14 @@
         "description": "Workflows vs. agents and the design patterns for each: five composable workflow patterns, reasoning and acting patterns (ReAct, Reflexion, CodeAct, ReWOO), and context-management patterns (event logs, compaction, observation masking, context isolation). Case study of the Pi harness.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf",
         "readings": [
-          {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"}
+          {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"},
+          {"text": "Schluntz & Zhang. \"Building Effective AI Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"},
+          {"text": "LangChain. \"Context Engineering.\" LangChain Blog (2025).", "url": "https://www.langchain.com/blog/context-engineering-for-agents"}
         ],
-        "additional": []
+        "additional": [
+          {"text": "Shinn et al. \"Reflexion: Language Agents with Verbal Reinforcement Learning.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2303.11366"},
+          {"text": "Wang et al. \"Executable Code Actions Elicit Better LLM Agents.\" ICML (2024).", "url": "https://arxiv.org/abs/2402.01030"}
+        ]
       },
       {
         "date": "Wed Oct 14",
@@ -97,13 +105,11 @@
         "description": "Why agents need memory and the four types (working, episodic, semantic, procedural). Four architecture patterns: skill libraries, tiered hierarchies like MemGPT, reflective consolidation, and memory maintenance. Memory benchmarks and open problems in forgetting, privacy, and over-personalization.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
         "readings": [
-          {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"}
-        ],
-        "additional": [
-          {"text": "Letta. \"Agent Memory: How to Build Agents that Learn and Remember.\" Letta Blog (2025).", "url": "https://www.letta.com/blog/agent-memory"},
-          {"text": "Chhikara et al. \"Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory.\" arXiv (2025).", "url": "https://arxiv.org/abs/2504.19413"},
+          {"text": "Sumers et al. \"Cognitive Architectures for Language Agents.\" TMLR (2024).", "url": "https://arxiv.org/abs/2309.02427"},
+          {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"},
           {"text": "Park et al. \"Generative Agents: Interactive Simulacra of Human Behavior.\" UIST (2023).", "url": "https://arxiv.org/abs/2304.03442"}
-        ]
+        ],
+        "additional": []
       }
     ]
   },
@@ -117,13 +123,11 @@
         "description": "When to use single vs. multi-agent systems and how to build them: orchestration patterns (orchestrator, swarm, hybrid), communication through handoffs, message boards, and the A2A protocol, and coordination infrastructure (task ledgers, shared memory, worktree isolation). Why multi-agent systems fail.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf",
         "readings": [
-          {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"}
+          {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"},
+          {"text": "Cemri et al. \"Why Do Multi-Agent LLM Systems Fail?\" NeurIPS Datasets & Benchmarks (2025).", "url": "https://arxiv.org/abs/2503.13657"},
+          {"text": "Kim et al. \"Towards a Science of Scaling Agent Systems.\" arXiv (2025).", "url": "https://arxiv.org/abs/2512.08296"}
         ],
-        "additional": [
-          {"text": "Cemri et al. \"Why Do Multi-Agent LLM Systems Fail?\" arXiv (2025).", "url": "https://arxiv.org/abs/2503.13657"},
-          {"text": "Neubig. \"Don't Sleep on Single-agent Systems.\" OpenHands Blog (2024).", "url": "https://openhands.dev/blog/dont-sleep-on-single-agent-systems"},
-          {"text": "Liu et al. \"A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration.\" COLM (2024).", "url": "https://arxiv.org/abs/2310.02170"}
-        ]
+        "additional": []
       },
       {
         "date": "Wed Oct 21",
@@ -132,13 +136,11 @@
         "description": "When optimization pays off and how to do it: context optimization (bootstrapped few-shot, MIPROv2, OPRO, TextGrad, GEPA), weight optimization (SFT on agent rollouts, RL with PPO and GRPO, on-policy distillation), agents as optimizers (Darwin Gödel Machine, autoresearch), and when to optimize prompts vs. weights.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
         "readings": [
-          {"text": "Snell et al. \"Scaling LLM Test-Time Compute Optimally…\" ICLR (2025).", "url": "https://arxiv.org/abs/2408.03314"},
-          {"text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform RL.\" arXiv (2026).", "url": "https://arxiv.org/abs/2507.19457"}
+          {"text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning.\" ICLR (2026).", "url": "https://arxiv.org/abs/2507.19457"},
+          {"text": "Opsahl-Ong et al. \"Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs.\" EMNLP (2024).", "url": "https://arxiv.org/abs/2406.11695"},
+          {"text": "Shao et al. \"DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models.\" arXiv (2024).", "url": "https://arxiv.org/abs/2402.03300"}
         ],
-        "additional": [
-          {"text": "Soylu et al. \"Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together.\" EMNLP (2024).", "url": "https://aclanthology.org/2024.emnlp-main.597/"},
-          {"text": "Opsahl-Ong et al. \"Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs.\" arXiv (2024).", "url": "https://arxiv.org/abs/2406.11695"}
-        ]
+        "additional": []
       }
     ]
   },
@@ -149,8 +151,14 @@
         "date": "Mon Oct 26",
         "title": "📺 Guest Lecture: Terminal-Bench",
         "speakers": [
-          {"name": "Ryan Marten", "url": "https://ryanmarten.com"},
-          {"name": "Alex Shaw", "url": "https://www.alexgshaw.com"}
+          {
+            "name": "Ryan Marten",
+            "url": "https://ryanmarten.com"
+          },
+          {
+            "name": "Alex Shaw",
+            "url": "https://www.alexgshaw.com"
+          }
         ],
         "description": "Ryan Marten and Alex Shaw (Laude Institute), co-creators of Terminal-Bench, on benchmarking how well AI agents accomplish real-world tasks in a terminal environment.",
         "readings": [
