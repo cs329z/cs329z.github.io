@@ -70,6 +70,7 @@
         "theme": "Frameworks & Agent Design",
         "description": "The data, system, and evals pillars of agent engineering, with live demos of DSPy (signatures, modules, optimizers) and LangGraph (state, nodes, edges). A tour of open-source agent harnesses (mini-SWE-agent, OpenHands, Pi), durable orchestration with Temporal, observability tooling, and best practices.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf",
+        "code_url": "https://github.com/cs329z/lecture5-frameworks",
         "readings": [
           {"text": "Khattab et al. \"DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines.\" ICLR (2024).", "url": "https://arxiv.org/abs/2310.03714"},
           {"text": "LangChain. \"LangGraph Overview.\" LangChain Docs.", "url": "https://docs.langchain.com/oss/python/langgraph/overview"},

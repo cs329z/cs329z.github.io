@@ -62,10 +62,12 @@
             <span class="lec-title">{{ lec.title }}</span>
             {% if lec.speakers %}<span class="lec-speakers">{% for sp in lec.speakers %}{% if sp.url %}<a href="{{ sp.url }}">{{ sp.name }}</a>{% else %}{{ sp.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}
             {% if lec.description %}<span class="lec-desc">{{ lec.description }}</span>{% endif %}
-            {% if lec.slides_url %}
-            <span class="slides-link"><a href="{{ lec.slides_url }}">Slides</a></span>
-            {% elif lec.slides %}
-            <span class="slides-link"><a href="{{ url_for('static', filename='slides/' + lec.slides) }}">Slides (PDF)</a></span>
+            {% if lec.slides_url or lec.slides or lec.code_url %}
+            <span class="slides-link">
+              {% if lec.slides_url %}<a href="{{ lec.slides_url }}">Slides</a>
+              {% elif lec.slides %}<a href="{{ url_for('static', filename='slides/' + lec.slides) }}">Slides (PDF)</a>{% endif %}
+              {% if lec.code_url %}<a class="code-link" href="{{ lec.code_url }}">Code</a>{% endif %}
+            </span>
             {% endif %}
           </td>
           <td class="material">
