@@ -156,6 +156,7 @@
           {"name": "Alex Shaw", "url": "https://www.alexgshaw.com"}
         ],
         "description": "Ryan Marten and Alex Shaw (Laude Institute), co-creators of Terminal-Bench, on benchmarking how well AI agents accomplish real-world tasks in a terminal environment.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture10.pdf",
         "readings": [
           {"text": "Terminal-Bench project site (leaderboard, tasks, and harness).", "url": "https://www.tbench.ai/"},
           {"text": "Merrill et al. \"Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces.\" ICLR (2026).", "url": "https://arxiv.org/abs/2601.11868"}
