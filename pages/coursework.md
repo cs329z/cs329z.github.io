@@ -16,7 +16,8 @@ and demonstrate understanding.
 
 ### Paper Video & Peer Reviews
 
-Each student records a **10-minute video** about a recent agent paper of their choosing (due Week 8).
+Each student records a **[10–15 minute video](https://web.stanford.edu/class/cs329z/assignments/paper_video.pdf)** about a recent agent paper of their choosing (due Week 8).
+See the [Paper Video handout](https://web.stanford.edu/class/cs329z/assignments/paper_video.pdf) for the full requirements and rubric.
 Students also complete four peer-review activities during the quarter: reviews of paper videos, midway
 demos, agent evaluations from HW2, and final system demos. Each activity involves reviewing two peers'
 work using the provided review forms.
