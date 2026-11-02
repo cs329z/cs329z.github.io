@@ -112,7 +112,7 @@ Progress sections. Required sections:
 
 #### 3. Final Report & Final System Demo (Finals Week)
 
-The final system demo is presented live on Demo Day during finals week. The final report is an 8-page paper in
+The final system demo is presented live on Demo Day, Wednesday, December 9, 3:30–6:30 p.m. The final report is an 8-page paper in
 ICLR submission format, adhering to ICLR guidelines concerning references, layout, supplementary
 materials, and so forth. Submit it together with a link to your final GitHub repository, whose README must
 let a reader run the system and reproduce your results. The final submission is graded out of 25 points:
