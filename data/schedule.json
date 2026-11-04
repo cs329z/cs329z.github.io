@@ -186,6 +186,7 @@
         "title": "Data Selection & Quality",
         "theme": "Data for Agentic Systems",
         "description": "Finding maximally informative data, filtering and selection strategies, tiny-but-targeted benchmarks, annotation practices, quality assessment, and building datasets from agent traces.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture12.pdf",
         "readings": [
           {"text": "Yang et al. \"SWE-smith: Scaling Data for Software Engineering Agents.\" NeurIPS D&B (2025).", "url": "https://arxiv.org/abs/2504.21798"},
           {"text": "Shankar et al. \"Who Validates the Validators? Aligning LLM-Assisted Evaluation with Human Preferences.\" UIST (2024).", "url": "https://arxiv.org/abs/2404.12272"}
@@ -199,6 +200,7 @@
         "title": "Evaluation Fundamentals & Benchmark Design",
         "theme": "Evaluation for Agentic Systems",
         "description": "Why evals are hard, the 4-tuple framework (request, environment, stopping criteria, scorer), designing each component, properties of good benchmarks, realistic scaffolding, and reliability dimensions.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture13.pdf",
         "readings": [
           {"text": "Zhu et al. \"Establishing Best Practices for Building Rigorous Agentic Benchmarks.\" (2025).", "url": "https://arxiv.org/abs/2507.02825"}
         ],
@@ -218,7 +220,7 @@
         "speakers": [
           {"name": "Andrew Ng", "url": "https://www.andrewng.org"}
         ],
-        "description": "A fireside chat with Andrew Ng, hosted by Diyi Yang. Professor Ng is the founder of DeepLearning.AI, co-founder of Coursera, founding lead of Google Brain, and a Professor of Computer Science at Stanford.",
+        "description": "A fireside chat with Andrew Ng, hosted by Diyi Yang. Professor Ng is the founder of DeepLearning.AI, co-founder of Coursera, founding lead of Google Brain, and an Adjunct Professor of Computer Science at Stanford.",
         "readings": [],
         "additional": []
       },
