@@ -6,7 +6,7 @@
   { "week": 7,  "deadline": "Midpoint Demo Video Due",         "date": "Fri Nov 6",  "time": "11:59 p.m." },
   { "week": 7,  "deadline": "Midway Report Due",               "date": "Fri Nov 6",  "time": "11:59 p.m." },
   { "week": 8,  "deadline": "Paper Video Due (10–15 min)",     "date": "Fri Nov 13", "time": "11:59 p.m.", "url": "https://web.stanford.edu/class/cs329z/assignments/paper_video.pdf" },
-  { "week": 10, "deadline": "HW2 Task Submission Due",         "date": "Mon Nov 23", "time": "11:59 p.m." },
+  { "week": 10, "deadline": "HW2 Task Submission Due (during Thanksgiving Break)", "date": "Mon Nov 23", "time": "11:59 p.m." },
   { "week": 11, "deadline": "Paper Video Peer Reviews Due (2 videos)", "date": "Mon Nov 30", "time": "11:59 p.m." },
   { "week": 11, "deadline": "HW2 Peer Reviews Due (3 tasks)",  "date": "Wed Dec 2",  "time": "11:59 p.m." },
   { "week": "Finals", "deadline": "Final System Demo (Demo Day)",      "date": "Wed Dec 9",  "time": "3:30–6:30 p.m." },
