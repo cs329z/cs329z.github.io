@@ -78,7 +78,8 @@ is ever deleted, the live site still deploys on its own.
 
 ### Lecture videos (automatic)
 
-Every day at 1:30 p.m. Pacific, `lecture-videos.yml` checks the Stanford Online
+Every day at 1:30 p.m. Pacific (with retries at 2:30 and 3:30, since GitHub
+sometimes skips scheduled runs), `lecture-videos.yml` checks the Stanford Online
 YouTube channel for uploads with "CS329Z" in the title. Each new one gets a PR
 that adds its `video_url` to the lecture named by "Lecture N" in the title, and
 tags and requests review from the GitHub users in `PR_REVIEWERS` in that
