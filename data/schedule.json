@@ -27,6 +27,7 @@
         "theme": "Foundations & Landscape",
         "description": "Language model internals for agent builders: decoding strategies, transformer attention (including linear and hybrid) and context length, the pretraining-to-post-training pipeline, inference and test-time scaling, structured I/O and constrained decoding, and context engineering.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
+        "video_url": "https://youtu.be/Vr1NzH8bT44",
         "readings": [
           {"text": "Vaswani et al. \"Attention Is All You Need.\" NeurIPS (2017).", "url": "https://arxiv.org/abs/1706.03762"},
           {"text": "Katharopoulos et al. \"Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention.\" ICML (2020).", "url": "https://arxiv.org/abs/2006.16236"},
