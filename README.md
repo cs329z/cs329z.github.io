@@ -17,6 +17,7 @@ Everything you'd normally change lives in plain data / markdown files:
 | Guest speakers | add a `"speakers": [{"name": "…", "url": "https://…"}]` list to the lecture in `data/schedule.json` |
 | Lecture code repo | add a `"code_url": "https://github.com/…"` link to the lecture in `data/schedule.json` (renders as a "Code" button next to "Slides") |
 | Lecture slides | add a `"slides_url": "https://…"` link to the lecture in `data/schedule.json` |
+| Lecture video | add a `"video_url": "https://…"` link to the lecture in `data/schedule.json` (renders as a "Video" button next to "Slides") |
 | Assignment & project deadlines | `data/deadlines.json` |
 | Welcome blurb | `pages/welcome.md` |
 | Temporary site-wide notice | `pages/announcement.md` (set `expires:` to auto-hide; delete the file to remove it) |

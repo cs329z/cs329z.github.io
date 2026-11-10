@@ -132,7 +132,21 @@ h4 { font-size: 15px; font-weight: bold; font-style: italic; margin-top: 18px; }
 /* Additional-readings dropdown: bottom-left of the Course Material cell */
 .material { text-align: left; }
 .slides-link { display: block; margin-top: 4px; font-weight: 600; }
+.slides-link a { text-decoration-thickness: .1em; }
 .slides-link a::before { content: "\2193  "; }
+.slides-link a.video-link { margin-left: 12px; position: relative; }
+/* Play-circle icon. The ::before is six non-breaking spaces (6 x .2em = icon
+   + gap), so the native hover underline runs under the icon like the other
+   links; the icon itself is the ::after, positioned over those spaces and
+   drawn via mask so it takes the link color. */
+.slides-link a.video-link::before { content: "\00a0\00a0\00a0\00a0\00a0\00a0"; }
+.slides-link a.video-link::after {
+  content: ""; position: absolute; left: 0; top: .214em; /* bottom sits .08em below baseline */
+  width: .85em; height: .85em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='none' stroke='black' stroke-width='1.6'/%3E%3Cpath d='M6.3 4.8v6.4L11.2 8z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='none' stroke='black' stroke-width='1.6'/%3E%3Cpath d='M6.3 4.8v6.4L11.2 8z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .slides-link a.code-link { margin-left: 12px; }
 .slides-link a.code-link::before { content: "\2039/\203A  "; }
 .more-readings { margin-top: 8px; text-align: left; }

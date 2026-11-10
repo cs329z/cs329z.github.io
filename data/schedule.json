@@ -8,6 +8,7 @@
         "theme": "Foundations & Landscape",
         "description": "Course logistics, a brief history of agents, and the anatomy of an agent: LLM core, reasoning, memory, tools, and environment. Compound AI systems and workflows vs. agents, plus the key challenges of reliability, training, safety, and evaluation.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
+        "video_url": "https://youtu.be/DGI4vucR71w",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"},
           {"text": "Weng. \"LLM Powered Autonomous Agents.\" Lil'Log (2023).", "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"},
