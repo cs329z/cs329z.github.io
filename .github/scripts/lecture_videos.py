@@ -18,6 +18,7 @@ print what would happen without changing anything in git or on GitHub.
 import argparse
 import difflib
 import json
+import os
 import re
 import subprocess
 import time
@@ -36,6 +37,8 @@ SCHEDULE = "data/schedule.json"
 PREVIEW_URL = "https://cs329z.stanford.edu/staging/"
 BOT_NAME = "github-actions[bot]"
 BOT_EMAIL = "41898282+github-actions[bot]@users.noreply.github.com"
+# GitHub users to tag in each PR and request review from (set in the workflow).
+REVIEWERS = os.environ.get("PR_REVIEWERS", "").replace(",", " ").split()
 
 
 def run(*cmd, check=True):
@@ -144,8 +147,9 @@ def refresh_preview(refs):
 def pr_body(video, lec, n, guessed, preview_ok):
     url = f"https://youtu.be/{video['id']}"
     when = datetime.fromisoformat(video["published"]).astimezone(ZoneInfo("America/Los_Angeles"))
+    tags = "".join(f"@{r} " for r in REVIEWERS)
     parts = [
-        "Stanford Online uploaded a new CS329Z video:",
+        f"{tags}Stanford Online uploaded a new CS329Z video:",
         f"[![thumbnail](https://i.ytimg.com/vi/{video['id']}/mqdefault.jpg)]({url})\n"
         f"**[{video['title']}]({url})**, uploaded {when:%a %b %-d, %-I:%M %p %Z}",
         f"This adds it as the **Video** link for **Lecture {n}: {lec['title']}** ({lec['date']}).",
@@ -221,7 +225,8 @@ def main():
         return
     preview_ok = refresh_preview([f"origin/{b}" for b in pending] + [b for b, *_ in created])
     for branch, title, *rest in created:
-        print(run("gh", "pr", "create", "--base", "main", "--head", branch,
+        reviewers = ["--reviewer", ",".join(REVIEWERS)] if REVIEWERS else []
+        print(run("gh", "pr", "create", "--base", "main", "--head", branch, *reviewers,
                   "--title", title, "--body", pr_body(*rest, preview_ok)).stdout.strip())
 
 

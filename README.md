@@ -80,8 +80,9 @@ is ever deleted, the live site still deploys on its own.
 
 Every day at 1:30 p.m. Pacific, `lecture-videos.yml` checks the Stanford Online
 YouTube channel for uploads with "CS329Z" in the title. Each new one gets a PR
-that adds its `video_url` to the lecture named by "Lecture N" in the title.
-Merge the PR to publish it, or close it to skip that video. Run it by hand from
+that adds its `video_url` to the lecture named by "Lecture N" in the title, and
+tags and requests review from the GitHub users in `PR_REVIEWERS` in that
+workflow file. Merge the PR to publish it, or close it to skip that video. Run it by hand from
 the repo's **Actions** tab, or locally with
 `python3 .github/scripts/lecture_videos.py --dry-run`.
 

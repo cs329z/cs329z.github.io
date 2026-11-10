@@ -27,3 +27,4 @@ jobs:
       - run: python3 .github/scripts/lecture_videos.py
         env:
           GH_TOKEN: ${{ github.token }}
+          PR_REVIEWERS: XenonMolecule   # tagged + asked to review each PR (comma-separated)
