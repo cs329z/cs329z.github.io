@@ -41,6 +41,7 @@
         "theme": "Building Blocks",
         "description": "Why retrieval helps, then the RAG pipeline end to end: indexing (chunking, contextual retrieval, RAPTOR, HNSW), retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT, agentic RAG (Self-RAG, Search-R1), and common failure modes. Plus a course project overview.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
+        "video_url": "https://youtu.be/psLc-46GqY0",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"},
           {"text": "Karpukhin et al. \"Dense Passage Retrieval for Open-Domain Question Answering.\" EMNLP (2020).", "url": "https://arxiv.org/abs/2004.04906"},
