@@ -232,6 +232,7 @@
         "title": "LLM-as-Judge & Evaluation Infrastructure",
         "theme": "Evaluation for Agentic Systems",
         "description": "The three grader types, designing judge prompts, known biases, pairwise vs. pointwise evaluation, non-determinism metrics (pass@k vs. pass^k), harness design, and Anthropic's 8-step roadmap.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture15.pdf",
         "readings": [
           {"text": "Grace et al. \"Demystifying Evals for AI Agents.\" Anthropic (2026).", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"},
           {"text": "Zheng et al. \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2306.05685"},
