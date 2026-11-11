@@ -1,7 +1,7 @@
 # Daily check of the Stanford Online YouTube channel for new CS329Z lecture
 # uploads (they go up around 1 p.m. Pacific). Each new one gets a PR adding its
 # "Video" link, and the staging preview is rebuilt so the PR can link to it.
-# A cron-job.org job starts it at 1:35 and 3:35 p.m. Pacific through the API
+# A cron-job.org job starts it at 1:15 p.m. Pacific every day through the API
 # (workflow_dispatch), because GitHub currently starts scheduled runs hours
 # late; the schedule below is only a backup. Runs that find nothing new change
 # nothing.
