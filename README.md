@@ -78,14 +78,20 @@ is ever deleted, the live site still deploys on its own.
 
 ### Lecture videos (automatic)
 
-Every day at 1:30 p.m. Pacific (with retries at 2:30 and 3:30, since GitHub
-sometimes skips scheduled runs), `lecture-videos.yml` checks the Stanford Online
-YouTube channel for uploads with "CS329Z" in the title. Each new one gets a PR
+Every afternoon, `lecture-videos.yml` checks the Stanford Online YouTube
+channel for uploads with "CS329Z" in the title. Each new one gets a PR
 that adds its `video_url` to the lecture named by "Lecture N" in the title, and
 tags and requests review from the GitHub users in `PR_REVIEWERS` in that
 workflow file. Merge the PR to publish it, or close it to skip that video. Run it by hand from
 the repo's **Actions** tab, or locally with
 `python3 .github/scripts/lecture_videos.py --dry-run`.
+
+A [cron-job.org](https://cron-job.org) job (set up by XenonMolecule) starts it
+through GitHub's API at 1:35 and 3:35 p.m. Pacific, using a fine-grained token
+that can only run Actions in this repo. When the token expires, cron-job.org
+reports the job as failing: create a new token and paste it into the job's
+`Authorization` header. The `schedule` in the workflow file is only a backup,
+because GitHub currently starts scheduled runs hours late.
 
 For its preview link, the action resets `staging` to `main` plus every open
 video PR. It only does this when `staging` has no commits from anyone else, so
