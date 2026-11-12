@@ -1,6 +1,7 @@
 # Daily check of the Stanford Online YouTube channel for new CS329Z lecture
 # uploads (they go up around 1 p.m. Pacific). Each new one gets a PR adding its
-# "Video" link, and the staging preview is rebuilt so the PR can link to it.
+# "Video" link; it's merged right away when the title names the lecture
+# (AUTO_MERGE), else left for review with a staging preview.
 # A cron-job.org job starts it at 1:15 p.m. Pacific every day through the API
 # (workflow_dispatch), because GitHub currently starts scheduled runs hours
 # late; the schedule below is only a backup. Runs that find nothing new change
@@ -31,4 +32,5 @@ jobs:
       - run: python3 .github/scripts/lecture_videos.py
         env:
           GH_TOKEN: ${{ github.token }}
-          PR_REVIEWERS: XenonMolecule   # tagged + asked to review each PR (comma-separated)
+          PR_REVIEWERS: XenonMolecule   # tagged in each PR, asked to review unmerged ones (comma-separated)
+          AUTO_MERGE: "true"            # merge PRs whose video title says "Lecture N"; "false" = review all
