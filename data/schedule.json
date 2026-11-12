@@ -316,7 +316,7 @@
       },
       {
         "date": "Wed Dec 2",
-        "title": "Proactive Agents",
+        "title": "Personal Agents",
         "theme": "Coding Agents & Proactive Agents",
         "description": "From reactive to proactive agents: General User Models (GUM), Next Action Prediction, open-source proactive personal agents, privacy and trust implications, and when agents should initiate vs. wait (mixed initiative).",
         "readings": [
