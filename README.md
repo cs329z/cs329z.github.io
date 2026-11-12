@@ -17,6 +17,7 @@ Everything you'd normally change lives in plain data / markdown files:
 | Guest speakers | add a `"speakers": [{"name": "…", "url": "https://…"}]` list to the lecture in `data/schedule.json` |
 | Lecture code repo | add a `"code_url": "https://github.com/…"` link to the lecture in `data/schedule.json` (renders as a "Code" button next to "Slides") |
 | Lecture slides | add a `"slides_url": "https://…"` link to the lecture in `data/schedule.json` |
+| Lecture video | add a `"video_url": "https://…"` link to the lecture in `data/schedule.json` (renders as a "Video" button next to "Slides") |
 | Assignment & project deadlines | `data/deadlines.json` |
 | Welcome blurb | `pages/welcome.md` |
 | Temporary site-wide notice | `pages/announcement.md` (set `expires:` to auto-hide; delete the file to remove it) |
@@ -74,6 +75,30 @@ A push to `staging` runs `staging.yml`, which re-triggers `deploy.yml` on
 `main`; that workflow builds both branches into one Pages deployment (the
 `github-pages` environment only permits deployments from `main`). If `staging`
 is ever deleted, the live site still deploys on its own.
+
+### Lecture videos (automatic)
+
+Every afternoon, `lecture-videos.yml` checks the Stanford Online YouTube
+channel for uploads with "CS329Z" in the title. Each new one gets a PR
+that adds its `video_url` to the lecture named by "Lecture N" in the title, and
+tags and requests review from the GitHub users in `PR_REVIEWERS` in that
+workflow file. Merge the PR to publish it, or close it to skip that video. Run it by hand from
+the repo's **Actions** tab, or locally with
+`python3 .github/scripts/lecture_videos.py --dry-run`.
+
+A [cron-job.org](https://cron-job.org) job (set up by XenonMolecule) starts it
+through GitHub's API at 1:15 p.m. Pacific every day, using a fine-grained token
+that can only run Actions in this repo. When the token expires, cron-job.org
+reports the job as failing: create a new token and paste it into the job's
+`Authorization` header. The `schedule` in the workflow file is only a backup,
+because GitHub currently starts scheduled runs hours late.
+
+For its preview link, the action resets `staging` to `main` plus every open
+video PR. It only does this when `staging` has no commits from anyone else, so
+your drafts are safe. Its preview commits can still be there when you start a
+draft, so begin with `git checkout -B staging origin/main` rather than
+`git merge main`. Otherwise merging `staging` into `main` would also publish
+the pending videos.
 
 ## Structure
 

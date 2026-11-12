@@ -1,0 +1,34 @@
+# Daily check of the Stanford Online YouTube channel for new CS329Z lecture
+# uploads (they go up around 1 p.m. Pacific). Each new one gets a PR adding its
+# "Video" link, and the staging preview is rebuilt so the PR can link to it.
+# A cron-job.org job starts it at 1:15 p.m. Pacific every day through the API
+# (workflow_dispatch), because GitHub currently starts scheduled runs hours
+# late; the schedule below is only a backup. Runs that find nothing new change
+# nothing.
+# Logic and details: .github/scripts/lecture_videos.py
+name: Check for new lecture videos
+
+on:
+  schedule:
+    - cron: "30 21-23 * * *"   # 21:30, 22:30, 23:30 UTC = 1:30, 2:30, 3:30 p.m. PST (an hour later during daylight time)
+  workflow_dispatch:
+
+permissions:
+  contents: write        # push the PR branch and the staging preview
+  pull-requests: write   # open the PR
+  actions: write         # run deploy.yml to publish the preview
+
+concurrency:
+  group: lecture-videos
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python3 .github/scripts/lecture_videos.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_REVIEWERS: XenonMolecule   # tagged + asked to review each PR (comma-separated)

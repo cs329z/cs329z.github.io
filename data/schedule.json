@@ -8,6 +8,7 @@
         "theme": "Foundations & Landscape",
         "description": "Course logistics, a brief history of agents, and the anatomy of an agent: LLM core, reasoning, memory, tools, and environment. Compound AI systems and workflows vs. agents, plus the key challenges of reliability, training, safety, and evaluation.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
+        "video_url": "https://youtu.be/DGI4vucR71w",
         "readings": [
           {"text": "Zaharia et al. \"The Shift from Models to Compound AI Systems.\" BAIR Blog (2024).", "url": "https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/"},
           {"text": "Weng. \"LLM Powered Autonomous Agents.\" Lil'Log (2023).", "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"},
@@ -26,6 +27,7 @@
         "theme": "Foundations & Landscape",
         "description": "Language model internals for agent builders: decoding strategies, transformer attention (including linear and hybrid) and context length, the pretraining-to-post-training pipeline, inference and test-time scaling, structured I/O and constrained decoding, and context engineering.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
+        "video_url": "https://youtu.be/Vr1NzH8bT44",
         "readings": [
           {"text": "Vaswani et al. \"Attention Is All You Need.\" NeurIPS (2017).", "url": "https://arxiv.org/abs/1706.03762"},
           {"text": "Katharopoulos et al. \"Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention.\" ICML (2020).", "url": "https://arxiv.org/abs/2006.16236"},
@@ -39,6 +41,7 @@
         "theme": "Building Blocks",
         "description": "Why retrieval helps, then the RAG pipeline end to end: indexing (chunking, contextual retrieval, RAPTOR, HNSW), retrievers from BM25 and DPR to hybrid search, reranking, and ColBERT, agentic RAG (Self-RAG, Search-R1), and common failure modes. Plus a course project overview.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf",
+        "video_url": "https://youtu.be/psLc-46GqY0",
         "readings": [
           {"text": "Lewis et al. \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\" NeurIPS (2020).", "url": "https://arxiv.org/abs/2005.11401"},
           {"text": "Karpukhin et al. \"Dense Passage Retrieval for Open-Domain Question Answering.\" EMNLP (2020).", "url": "https://arxiv.org/abs/2004.04906"},
@@ -229,6 +232,7 @@
         "title": "LLM-as-Judge & Evaluation Infrastructure",
         "theme": "Evaluation for Agentic Systems",
         "description": "The three grader types, designing judge prompts, known biases, pairwise vs. pointwise evaluation, non-determinism metrics (pass@k vs. pass^k), harness design, and Anthropic's 8-step roadmap.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture15.pdf",
         "readings": [
           {"text": "Grace et al. \"Demystifying Evals for AI Agents.\" Anthropic (2026).", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"},
           {"text": "Zheng et al. \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2306.05685"},
@@ -299,7 +303,7 @@
       {
         "date": "Mon Nov 30",
         "title": "Coding & Software Agents",
-        "theme": "Coding Agents & Proactive, Personal Agents",
+        "theme": "Coding Agents & Personal Agents",
         "description": "How coding agents work end to end: the SWE-agent, Claude Code, and OpenHands architectures, scaffolds as design decisions, SWE-bench and the 4-tuple framework in practice, and the future of software development with agents.",
         "readings": [
           {"text": "Yang et al. \"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2405.15793"},
@@ -312,8 +316,8 @@
       },
       {
         "date": "Wed Dec 2",
-        "title": "Personal Agent",
-        "theme": "Coding Agents & Proactive, Personal Agents",
+        "title": "Personal Agents",
+        "theme": "Coding Agents & Personal Agents",
         "description": "From reactive to proactive, personal agents: General User Models (GUM), Next Action Prediction, open-source proactive personal agents, privacy and trust implications, and when agents should initiate vs. wait (mixed initiative).",
         "readings": [
           {"text": "Shaikh et al. \"Creating General User Models from Computer Use.\" UIST (2025).", "url": "https://arxiv.org/abs/2505.10831"}
