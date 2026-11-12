@@ -60,6 +60,7 @@
         "theme": "Building Blocks",
         "description": "Why LLMs need tools and how they learn to use them: Toolformer, scaling to thousands of APIs with Gorilla and ToolLLM, standard interfaces from REST to function calling to MCP, evaluating tool use with BFCL, ToolBench, and τ-bench, and common failure modes.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf",
+        "video_url": "https://youtu.be/_UzK3Eiif5g",
         "readings": [
           {"text": "Schick et al. \"Toolformer: Language Models Can Teach Themselves to Use Tools.\" NeurIPS (2023).", "url": "https://arxiv.org/abs/2302.04761"},
           {"text": "Patil et al. \"Gorilla: Large Language Model Connected with Massive APIs.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2305.15334"},
