@@ -299,7 +299,7 @@
       {
         "date": "Mon Nov 30",
         "title": "Coding & Software Agents",
-        "theme": "Coding Agents & Proactive Agents",
+        "theme": "Coding Agents & Proactive, Personal Agents",
         "description": "How coding agents work end to end: the SWE-agent, Claude Code, and OpenHands architectures, scaffolds as design decisions, SWE-bench and the 4-tuple framework in practice, and the future of software development with agents.",
         "readings": [
           {"text": "Yang et al. \"SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering.\" NeurIPS (2024).", "url": "https://arxiv.org/abs/2405.15793"},
@@ -312,9 +312,9 @@
       },
       {
         "date": "Wed Dec 2",
-        "title": "Proactive Agents",
-        "theme": "Coding Agents & Proactive Agents",
-        "description": "From reactive to proactive agents: General User Models (GUM), Next Action Prediction, open-source proactive personal agents, privacy and trust implications, and when agents should initiate vs. wait (mixed initiative).",
+        "title": "Personal Agent",
+        "theme": "Coding Agents & Proactive, Personal Agents",
+        "description": "From reactive to proactive, personal agents: General User Models (GUM), Next Action Prediction, open-source proactive personal agents, privacy and trust implications, and when agents should initiate vs. wait (mixed initiative).",
         "readings": [
           {"text": "Shaikh et al. \"Creating General User Models from Computer Use.\" UIST (2025).", "url": "https://arxiv.org/abs/2505.10831"}
         ],
