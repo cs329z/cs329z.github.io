@@ -94,7 +94,9 @@ Run it by hand from the repo's **Actions** tab, or locally with
 `python3 .github/scripts/lecture_videos.py --dry-run`.
 
 A [cron-job.org](https://cron-job.org) job (set up by XenonMolecule) starts it
-through GitHub's API at 1:15 p.m. Pacific every day, using a fine-grained token
+through GitHub's API several times each afternoon from 1:15 p.m. Pacific
+(YouTube's feed can take an hour or more to list a new upload; runs that find
+nothing change nothing), using a fine-grained token
 that can only run Actions in this repo. When the token expires, cron-job.org
 reports the job as failing: create a new token and paste it into the job's
 `Authorization` header. The `schedule` in the workflow file is only a backup,

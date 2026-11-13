@@ -33,7 +33,10 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 CHANNEL_ID = "UCBa5G_ESCn8Yd4vw5U-gIcg"  # Stanford Online
-FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
+# The channel's upload feed, then the same uploads minus Shorts as a playlist
+# feed ("UULF" + channel ID), for when YouTube's channel feed is down.
+FEED_URLS = [f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}",
+             f"https://www.youtube.com/feeds/videos.xml?playlist_id=UULF{CHANNEL_ID[2:]}"]
 NS = {"atom": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
 COURSE_RE = re.compile(r"\bCS\s?329Z\b", re.I)
 LECTURE_RE = re.compile(r"\bLecture\s*#?\s*(\d+)\b", re.I)
@@ -58,16 +61,24 @@ def git(*args, check=True):
 
 
 def fetch_feed():
-    """The channel's most recent uploads (YouTube serves the latest 15), oldest first."""
-    for attempt in range(4):
-        try:
-            with urllib.request.urlopen(FEED_URL, timeout=30) as resp:
-                root = ET.fromstring(resp.read())
+    """The channel's most recent uploads (YouTube serves the latest 15), oldest first.
+    YouTube's feeds sometimes fail for a while (HTTP 404), so try both feeds, over
+    about 10 minutes."""
+    root = None
+    for attempt in range(5):
+        if attempt:
+            time.sleep(60 * attempt)
+        for url in FEED_URLS:
+            try:
+                with urllib.request.urlopen(url, timeout=30) as resp:
+                    root = ET.fromstring(resp.read())
+                break
+            except (OSError, ET.ParseError) as e:
+                print(f"::warning::Couldn't read {url}: {e}")
+        if root is not None:
             break
-        except (OSError, ET.ParseError):
-            if attempt == 3:
-                raise
-            time.sleep(20 * (attempt + 1))
+    if root is None:
+        raise RuntimeError("YouTube's upload feeds are unavailable; try again later.")
     videos = []
     for e in root.findall("atom:entry", NS):
         link = e.find("atom:link", NS)

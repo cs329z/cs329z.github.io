@@ -2,10 +2,11 @@
 # uploads (they go up around 1 p.m. Pacific). Each new one gets a PR adding its
 # "Video" link; it's merged right away when the title names the lecture
 # (AUTO_MERGE), else left for review with a staging preview.
-# A cron-job.org job starts it at 1:15 p.m. Pacific every day through the API
-# (workflow_dispatch), because GitHub currently starts scheduled runs hours
-# late; the schedule below is only a backup. Runs that find nothing new change
-# nothing.
+# A cron-job.org job starts it through the API (workflow_dispatch) several
+# times each afternoon from 1:15 p.m. Pacific, since YouTube's feed can take an
+# hour or more to list a new upload. GitHub currently starts scheduled runs
+# hours late, so the schedule below is only a backup. Runs that find nothing
+# new change nothing.
 # Logic and details: .github/scripts/lecture_videos.py
 name: Check for new lecture videos
 
