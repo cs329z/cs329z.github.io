@@ -111,6 +111,7 @@
         "theme": "Memory & Multi-Agent Systems",
         "description": "Why agents need memory and the four types (working, episodic, semantic, procedural). Four architecture patterns: skill libraries, tiered hierarchies like MemGPT, reflective consolidation, and memory maintenance. Memory benchmarks and open problems in forgetting, privacy, and over-personalization.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf",
+        "video_url": "https://youtu.be/qh5tP6PBZ6U",
         "readings": [
           {"text": "Sumers et al. \"Cognitive Architectures for Language Agents.\" TMLR (2024).", "url": "https://arxiv.org/abs/2309.02427"},
           {"text": "Packer et al. \"MemGPT: Towards LLMs as Operating Systems.\" arXiv (2023).", "url": "https://arxiv.org/abs/2310.08560"},
