@@ -94,6 +94,7 @@
         "theme": "Frameworks & Agent Design",
         "description": "Workflows vs. agents and the design patterns for each: five composable workflow patterns, reasoning and acting patterns (ReAct, Reflexion, CodeAct, ReWOO), and context-management patterns (event logs, compaction, observation masking, context isolation). Case study of the Pi harness.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf",
+        "video_url": "https://youtu.be/JC_pLC5EX_w",
         "readings": [
           {"text": "Yao et al. \"ReAct: Synergizing Reasoning and Acting in Language Models.\" ICLR (2023).", "url": "https://arxiv.org/abs/2210.03629"},
           {"text": "Schluntz & Zhang. \"Building Effective AI Agents.\" Anthropic (2024).", "url": "https://www.anthropic.com/engineering/building-effective-agents"},
