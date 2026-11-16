@@ -130,6 +130,7 @@
         "theme": "Memory & Multi-Agent Systems",
         "description": "When to use single vs. multi-agent systems and how to build them: orchestration patterns (orchestrator, swarm, hybrid), communication through handoffs, message boards, and the A2A protocol, and coordination infrastructure (task ledgers, shared memory, worktree isolation). Why multi-agent systems fail.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf",
+        "video_url": "https://youtu.be/TlX_ft_PQIM",
         "readings": [
           {"text": "Wu et al. \"AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation.\" COLM (2024).", "url": "https://arxiv.org/abs/2308.08155"},
           {"text": "Cemri et al. \"Why Do Multi-Agent LLM Systems Fail?\" NeurIPS Datasets & Benchmarks (2025).", "url": "https://arxiv.org/abs/2503.13657"},
