@@ -144,6 +144,7 @@
         "theme": "Optimization",
         "description": "When optimization pays off and how to do it: context optimization (bootstrapped few-shot, MIPROv2, OPRO, TextGrad, GEPA), weight optimization (SFT on agent rollouts, RL with PPO and GRPO, on-policy distillation), agents as optimizers (Darwin Gödel Machine, autoresearch), and when to optimize prompts vs. weights.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf",
+        "video_url": "https://youtu.be/e_m99aR7_3Q",
         "readings": [
           {"text": "Agrawal et al. \"GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning.\" ICLR (2026).", "url": "https://arxiv.org/abs/2507.19457"},
           {"text": "Opsahl-Ong et al. \"Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs.\" EMNLP (2024).", "url": "https://arxiv.org/abs/2406.11695"},
