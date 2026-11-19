@@ -271,6 +271,7 @@
         "title": "Agent Safety & Guardrails",
         "theme": "Safety",
         "description": "Privacy risks of tool access, prompt injection (including indirect injection), red-teaming, sandboxing and permission models, output guardrails, liability considerations, responsible deployment, and human-in-the-loop patterns.",
+        "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture17.pdf",
         "readings": [
           {"text": "Shao et al. \"PrivacyLens: Evaluating Privacy Norm Awareness of LMs in Action.\" NeurIPS D&B (2024).", "url": "https://arxiv.org/abs/2409.00138"},
           {"text": "Zhang & Yang. \"Searching for Privacy Risks in LLM Agents via Simulation.\" arXiv (2025).", "url": "https://arxiv.org/abs/2508.10880"},
