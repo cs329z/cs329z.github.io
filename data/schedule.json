@@ -179,6 +179,7 @@
         "theme": "Data for Agentic Systems",
         "description": "Traces, demonstrations, and feedback, data for optimization vs. evaluation, data flywheels, synthetic data generation, and collecting data from human-agent interaction.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture11.pdf",
+        "video_url": "https://youtu.be/y2cwbmOy12U",
         "readings": [
           {"text": "Shankar. \"Data Flywheels for LLM Applications.\" (2024).", "url": "https://www.sh-reya.com/blog/ai-engineering-flywheel/"}
         ],
