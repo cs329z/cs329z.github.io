@@ -198,6 +198,7 @@
         "theme": "Data for Agentic Systems",
         "description": "Finding maximally informative data, filtering and selection strategies, tiny-but-targeted benchmarks, annotation practices, quality assessment, and building datasets from agent traces.",
         "slides_url": "https://web.stanford.edu/class/cs329z/slides/lecture12.pdf",
+        "video_url": "https://youtu.be/_iVIugwpiUI",
         "readings": [
           {"text": "Yang et al. \"SWE-smith: Scaling Data for Software Engineering Agents.\" NeurIPS D&B (2025).", "url": "https://arxiv.org/abs/2504.21798"},
           {"text": "Shankar et al. \"Who Validates the Validators? Aligning LLM-Assisted Evaluation with Human Preferences.\" UIST (2024).", "url": "https://arxiv.org/abs/2404.12272"}
