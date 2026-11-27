@@ -233,6 +233,7 @@
           {"name": "Andrew Ng", "url": "https://www.andrewng.org"}
         ],
         "description": "A fireside chat with Andrew Ng, hosted by Diyi Yang. Professor Ng is the founder of DeepLearning.AI, co-founder of Coursera, founding lead of Google Brain, and an Adjunct Professor of Computer Science at Stanford.",
+        "video_url": "https://youtu.be/aDHf1r6ZZRA",
         "readings": [],
         "additional": []
       },
